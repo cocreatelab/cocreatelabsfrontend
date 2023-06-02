@@ -1,0 +1,164 @@
+.welcome {
+  background-image: url("../assets/mentorConnect.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+}
+section{
+  overflow: hidden;
+}
+.session {
+  background-color: rgb(244, 247, 255);
+  width: 80%;
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#explore:focus,
+#explore:hover {
+  outline: none;
+  border: none;
+}
+
+.profile {
+  width: 60%;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.responsive_img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.grp {
+  background-color: white;
+  width: 40%;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+  width: 30%;
+  border: none;
+  outline: none;
+}
+
+.welc {
+  width: 40%;
+  text-align: center;
+}
+
+.skillset {
+  width: 60%;
+  text-align: center;
+}
+
+.test {
+  width: 25%;
+  text-align: center;
+}
+
+.start {
+  width: 50%;
+  text-align: center;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 8rem;
+  width: 15rem;
+  height: 13rem;
+  background-color: rgb(74, 144, 226);
+}
+
+.disc {
+  border-radius: 100%;
+  position: absolute;
+  bottom: 4rem;
+  left: 10rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: #ffff;
+}
+
+.disc-int {
+  border-radius: 100%;
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: rgb(216, 216, 216);
+}
+
+.mentors {
+  width: 70%;
+  text-align: center;
+}
+
+#mentorship {
+  background-image: url("../assets/map.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+}
+
+#cards {
+  margin: 10rem auto;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+
+@media only screen and (max-width: 600px) {
+  #explore {
+    width: 100%;
+  }
+
+  .session {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .skillset,
+  .test {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .test,
+  .skillset {
+    width: 100%;
+  }
+
+  #cards {
+    margin: 0 auto;
+    gap: 2;
+    flex-direction: column;
+  }
+
+  .session {
+    flex-direction: column;
+  }
+
+  .profile {
+    width: 100%;
+    padding: 20px;
+  }
+  .box {
+    position: absolute;
+    top: 0;
+    left: auto;
+  }
+}

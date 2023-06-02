@@ -1,0 +1,311 @@
+.offerings-parent-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 84px;
+  padding: 3% 7%3%7%;
+}
+
+.offerings-top-conatainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.offerings-primary-heading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #0096F6;
+}
+
+.offerings-secondary-heading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  letter-spacing: -0.581818px;
+  text-transform: capitalize;
+  color: #111111;
+}
+
+.offerings-secondary-heading .wrap {
+  color: #0096f6;
+}
+.offerings-primary-text{
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.offerings-text1{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #637381;
+}
+
+.offeringsbutton-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: none;
+  gap: 3rem;
+  padding: 2em;
+  margin-bottom: 43px;
+}
+.offeringsbutton-container button {
+  border-radius: 8px;
+  width: 190px;
+  height: 60px;
+}
+
+.mentorconnect,
+.investorconnect,
+.grantsconnect {
+  /* color: #0096f6;
+  background: white;
+  outline: none;
+  border: 2px solid #0096f6;
+  border-radius: 8px; */
+
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+text-transform: capitalize;
+color: #637381;
+border: 2px solid #0096f6;
+}
+
+.mentorconnect:hover,
+.investorconnect:hover,
+.grantsconnect:hover {
+  border: none;
+  background-color: #0096f6;
+  color: #ffffff;
+}
+
+.offerings-rectangle-box {
+  display: flex;
+  /* padding: 2% 6%; */
+  padding: 3em;
+  width: 85%;
+  background: #f4f7ff;
+  border-radius: 100px;
+}
+
+.offerings-box-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+  gap: 5rem;
+}
+
+.offerings-left-content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  /* padding: 4.5% 6%; */
+}
+
+.case-study-container {
+  margin-top: -82px;
+  display: flex;
+  width: 75%;
+  height: 270px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 19% 10%;
+  gap: 1rem;
+}
+.case-study-title p {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 7px;
+line-height: 20px;
+text-align: center;
+text-transform: capitalize;
+color: #0096F6;
+}
+
+.case-study-heading {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #212B36;
+}
+
+.case-study-button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  width: 150px;
+  height: 50px;
+  padding: 2%2%2%2%;
+  margin-top: 20px;
+  background: transparent;
+  outline: none;
+  border: 2px solid  #0096F6;
+  border-radius: 8px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #637381;
+}
+
+.case-study-button:hover {
+  border-color: #0096f6;
+  background-color: #0096f6;
+  color: white;
+}
+
+.offeringsimg1 {
+  width: 370px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.offerings-right-content {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  /* padding: 4.5% 6%; */
+}
+
+.offerings-right-primary-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #0096f6;
+}
+
+.offerings-right-primary-heading{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  width: 80%;
+  font-size: 35px;
+  line-height: 45px;
+  text-transform: capitalize;
+  color: #2E2E2E;
+}
+
+.offerings-right-primary-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #637381;
+}
+.offerings-right-button-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 34px;
+}
+
+.findmentor,
+.becomementor {
+  color: #0096f6;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  width: 150px;
+  height: 60px;
+  color: #0096F6;
+  background: #f4f7ff;
+  outline: none;
+  border: 2px solid #0096f6;
+  border-radius: 8px;
+}
+
+.findmentor:focus,
+.becomementor:focus {
+  outline: none;
+}
+
+.findmentor:hover,
+.becomementor:hover {
+  background-color: #0096f6;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .offerings-box-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 6em;
+    /* width: 100px; */
+    margin-left: -60px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .offeringsbutton-container{
+    flex-direction: column;
+    /* width: 30%; */
+  }
+
+  .offerings-left-content {
+    text-align: center;
+  }
+  .offerings-right-content{
+    text-align: center;
+    align-items: center;
+    margin-left: 50px;
+    flex-direction: column;
+  }
+  .offeringsimg1 {
+    width: 100%;
+  }
+
+  .offerings-box-content{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}

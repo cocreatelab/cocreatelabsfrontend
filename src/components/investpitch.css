@@ -1,0 +1,88 @@
+.pitch-parent-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding: 2em; */
+    gap: 1rem;
+    /* margin-top: 4%; */
+    background-image: url("../assets/pitchbackground.png");
+}
+
+.pitch-content-container{
+    padding: 2em;
+}
+
+.pitch-content-container h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 45px;
+    /* or 94% */
+    
+    text-align: center;
+    text-transform: capitalize;
+    
+    color: #FFFFFF;
+    
+}
+
+.pitch-content-container p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 45px;
+    /* or 94% */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.pitch-content-container h2{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 45px;
+    /* or 94% */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.pitch-content-container p{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height, or 125% */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.pitchbtn{
+    background: #4A90E2;
+    border-radius: 20px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    width: 200px;
+    padding: 1em;
+}

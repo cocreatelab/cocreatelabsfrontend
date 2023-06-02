@@ -1,0 +1,150 @@
+.newsletter-parent-container{
+    background-image: url("../assets/Newsletter.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5em;
+    /* width: 1000px; */
+    /* opacity: ; */
+    /* border-radius: 14px; */
+    mix-blend-mode: normal;
+}
+
+.sub-newsletter-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.heading-container h3{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 52px;
+text-align: center;
+letter-spacing: -0.4px;
+color: #FFFFFF;
+}
+.heading-container p{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+text-align: center;
+color: #FFFFFF;
+mix-blend-mode: normal;
+}
+.newslettercontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    
+}
+.newslettercontainer{
+  border-radius: 100px;
+}
+.name-container{
+    border: 2px solid #FFFFFF;
+    border-radius: 100px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    outline: none;
+    opacity: 0.4;
+}
+.your-email{
+    border: 2px solid #FFFFFF;
+    border-radius: 100px;
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    opacity: 0.4;
+    outline: none;
+    width: 25rem;
+    
+}
+.sign-up-container{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    display: flex;
+    width: 15%;
+    align-items: center;
+    text-align: center;
+    background: #00A99D;
+    border-radius: 100px;
+}
+.bottom-container{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+}
+
+
+/* For screens smaller than 600px (e.g. smartphones) */
+@media (max-width: 600px) {
+    .newsletter-parent-container {
+      padding: 0.5em;
+    }
+    .sub-newsletter-container {
+      gap: 0.5rem;
+    }
+    .newslettercontainer {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .your-email {
+      width: 100%;
+    }
+  }
+  
+  /* For screens between 600px and 1200px (e.g. tablets) */
+  @media (min-width: 600px) and (max-width: 1200px) {
+    .heading-container h3 {
+      font-size: 36px;
+    }
+    .name-container, .your-email, .sign-up-container {
+      font-size: 16px;
+    }
+  }
+  
+  /* For screens larger than 1200px (e.g. desktops) */
+  @media (min-width: 1200px) {
+    .heading-container h3 {
+      font-size: 48px;
+    }
+    .sub-newsletter-container {
+      gap: 2rem;
+      text-align: center;
+      align-items: center;
+    }
+    .newslettercontainer {
+      gap: 4rem;
+    }
+    .name-container, .your-email, .sign-up-container {
+      font-size: 20px;
+      text-align: center;
+      align-items: center;
+    }
+  }
+  
