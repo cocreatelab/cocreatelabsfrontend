@@ -1,4 +1,4 @@
-.welcome {
+/* .welcome {
   background-image: url("../assets/mentorConnect.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -161,4 +161,81 @@ input {
     top: 0;
     left: auto;
   }
+}
+ */
+
+
+
+
+.mentor-parent-container{
+      display: flex;
+      background-image: url("../assets/Group-21.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      /* margin-bottom: 1000px; */
+}
+
+mentor-main-heading{
+  /* height: 10000%; */
+}
+
+.mentor-welcome-parent-container{
+  display: flex;
+  background-image: url("../assets/welcomebg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2em;
+}
+
+
+
+.welcome-content-container{
+  /* display: flex; */
+  align-items: start;
+  justify-content: flex-start;
+  text-align: start;
+  width: 650px;
+  height: 722px;
+  margin-left: -60%;
+}
+
+.welcome-message{
+  /* margin-left: -53%; */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  
+  color: #4A90E2;
+}
+.welcome-startup {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 46px;
+  text-transform: capitalize;
+  color: #212B36;
+  margin-top: 5%;
+}
+
+.welcome-primary-text{
+  width: 80%;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  /* or 128% */
+  
+  
+  color: #637381;
+}
+
+.go-to-presence{
+  margin-top: -4%;
 }
