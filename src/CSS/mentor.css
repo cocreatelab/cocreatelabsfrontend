@@ -1,20 +1,11 @@
-.welcome {
-  background-image: url("../assets/mentorConnect.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100vh;
-}
-section{
-  overflow: hidden;
-}
-.session {
-  background-color: rgb(244, 247, 255);
-  width: 80%;
-  padding: 5rem;
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden;
+
+.mentor-parent-container{
+      display: flex;
+      background-image: url("../assets/Group-21.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      /* margin-bottom: 1000px; */
 }
 
 mentor-main-heading{
@@ -65,15 +56,11 @@ mentor-main-heading{
 
 .welcome-primary-text{
   width: 80%;
-
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  /* or 128% */
-  
-  
   color: #637381;
 }
 
