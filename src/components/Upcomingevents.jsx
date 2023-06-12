@@ -24,12 +24,12 @@ const Upcomingevents = () => {
           </div>
         </div>
 
-        <div className="event-card-container flex flex-wrap">
+        <div className="event-card-container flex flex-wrap flex-row">
         <img className="w-70 transform scale-100 hover:scale-105" src={imgh1} alt="" />
         <img className="w-70 transform scale-100 hover:scale-105" src={imgh2} alt="" />
         <img className="w-70 transform scale-100 hover:scale-105" src={imgh3} alt="" />
         </div>
-        
+    
         <div className="events-button-container">
           <button className="loadmore">Learn More</button>
         </div>

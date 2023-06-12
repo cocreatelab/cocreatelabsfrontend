@@ -4,7 +4,7 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 84px;
+  /* margin-top: 84px; */
   padding: 3% 7%3%7%;
 }
 
@@ -42,10 +42,7 @@
   color: #0096f6;
 }
 .offerings-primary-text{
-  width: 60%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  width: 70%;
 }
 
 .offerings-text1{
@@ -77,12 +74,6 @@
 .mentorconnect,
 .investorconnect,
 .grantsconnect {
-  /* color: #0096f6;
-  background: white;
-  outline: none;
-  border: 2px solid #0096f6;
-  border-radius: 8px; */
-
   font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
@@ -127,7 +118,6 @@ border: 2px solid #0096f6;
   justify-content: center;
   align-items: center;
   margin-left: 50px;
-  /* padding: 4.5% 6%; */
 }
 
 .case-study-container {

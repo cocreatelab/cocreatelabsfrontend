@@ -56,7 +56,7 @@ const Newsletter = () => {
             </form>
           </div>
           <div className="bottom-container">
-            <p className="text-xs md:text-sm">By subscribing, you agree to the Terms of Service</p>
+            <p className="text-xs md:text-sm text-white">By subscribing, you agree to the Terms of Service</p>
           </div>
         </div>
       </div>

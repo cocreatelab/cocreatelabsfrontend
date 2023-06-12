@@ -1,164 +1,73 @@
-.welcome {
-  background-image: url("../assets/mentorConnect.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100vh;
+
+.mentor-parent-container{
+      display: flex;
+      background-image: url("../assets/Group-21.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      /* margin-bottom: 1000px; */
 }
-section{
-  overflow: hidden;
+
+mentor-main-heading{
+  /* height: 10000%; */
 }
-.session {
-  background-color: rgb(244, 247, 255);
-  width: 80%;
-  padding: 5rem;
+
+.mentor-welcome-parent-container{
   display: flex;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
-#explore:focus,
-#explore:hover {
-  outline: none;
-  border: none;
-}
-
-.profile {
-  width: 60%;
-  padding: 2rem;
-  overflow: hidden;
-}
-
-.responsive_img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.grp {
-  background-color: white;
-  width: 40%;
-  border: 1px solid grey;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-input {
-  text-align: center;
-  width: 30%;
-  border: none;
-  outline: none;
-}
-
-.welc {
-  width: 40%;
-  text-align: center;
-}
-
-.skillset {
-  width: 60%;
-  text-align: center;
-}
-
-.test {
-  width: 25%;
-  text-align: center;
-}
-
-.start {
-  width: 50%;
-  text-align: center;
-}
-
-.box {
-  position: absolute;
-  top: 0;
-  left: 8rem;
-  width: 15rem;
-  height: 13rem;
-  background-color: rgb(74, 144, 226);
-}
-
-.disc {
-  border-radius: 100%;
-  position: absolute;
-  bottom: 4rem;
-  left: 10rem;
-  width: 10rem;
-  height: 10rem;
-  background-color: #ffff;
-}
-
-.disc-int {
-  border-radius: 100%;
-  position: absolute;
-  bottom: 3rem;
-  left: 3rem;
-  width: 4rem;
-  height: 4rem;
-  background-color: rgb(216, 216, 216);
-}
-
-.mentors {
-  width: 70%;
-  text-align: center;
-}
-
-#mentorship {
-  background-image: url("../assets/map.png");
+  background-image: url("../assets/welcomebg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 20rem;
+  padding: 2em;
 }
 
-#cards {
-  margin: 10rem auto;
-  display: flex;
-  justify-content: space-around;
-  width: 70%;
+
+
+.welcome-content-container{
+  /* display: flex; */
+  align-items: start;
+  justify-content: flex-start;
+  text-align: start;
+  width: 650px;
+  height: 722px;
+  margin-left: -60%;
 }
 
-@media only screen and (max-width: 600px) {
-  #explore {
-    width: 100%;
-  }
-
-  .session {
-    padding: 1rem;
-  }
+.welcome-message{
+  /* margin-left: -53%; */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  
+  color: #4A90E2;
+}
+.welcome-startup {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 46px;
+  text-transform: capitalize;
+  color: #212B36;
+  margin-top: 5%;
 }
 
-@media only screen and (max-width: 1200px) {
-  .skillset,
-  .test {
-    width: 90%;
-  }
+.welcome-primary-text{
+  width: 80%;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  /* or 128% */
+  
+  
+  color: #637381;
 }
-@media only screen and (max-width: 1000px) {
-  .test,
-  .skillset {
-    width: 100%;
-  }
 
-  #cards {
-    margin: 0 auto;
-    gap: 2;
-    flex-direction: column;
-  }
-
-  .session {
-    flex-direction: column;
-  }
-
-  .profile {
-    width: 100%;
-    padding: 20px;
-  }
-  .box {
-    position: absolute;
-    top: 0;
-    left: auto;
-  }
+.go-to-presence{
+  margin-top: -4%;
 }

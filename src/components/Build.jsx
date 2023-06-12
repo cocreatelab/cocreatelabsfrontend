@@ -8,7 +8,7 @@ const Build = () => {
     <>
       <div className="build-parent-container">
         <div className="build-left-content">
-        <Fade top distance='20' duration={100} delay={1000}>
+        <Fade top distance='20' duration={1000} delay={100}>
           <h1>Build Connections that help you grow your business</h1>
           <div className="build-primary-text">
             <p>Co - Create Labs is a one of a kind ecosystem of global leaders and

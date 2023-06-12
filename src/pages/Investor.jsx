@@ -12,7 +12,7 @@ export const Investor = () => {
       {<Investapply />}
       {<Investpitch />}
       {<FeedbackForm/>}
-      {<Investorform/>}
+      {/* {<Investorform/>} */}
     </>
   );
 };
