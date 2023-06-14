@@ -203,8 +203,14 @@ const Navbar = () => {
                   ) : (
                     <ListItemButton
                       component={Link}
-                      to={`/${item.text.toLowerCase()}`}
-                    >
+                    to={
+                      item.text === "About"
+                        ? "/about"
+                        : item.text === "Contact"
+                        ? "/contact"
+                        : "/"
+                    }
+                  >
                       <ListItemText primary={item.text} />
                     </ListItemButton>
                   )}
