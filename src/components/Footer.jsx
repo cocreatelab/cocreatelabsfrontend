@@ -13,31 +13,66 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="Ellipse">
-        <img src={ellipse1} alt="" className="Ellipse" />
+        <img src={ellipse1} alt="" className="Ellipse" class="img-fluid" />
       </div>
-      <div className="sb-footer">
+      <div className="sb-footer ">
         <div className="sb-footer-link">
           <div className="sb-footer-left contener ml-10">
-            <div className="sb-footer-logo">
-              <img src={footerlogo} alt="" className="footerlogo" />
+            <div className="sb-footer-logo mb-5">
+              <img
+                src={footerlogo}
+                alt=""
+                className="footerlogo"
+                class="img-fluid"
+              />
             </div>
-            <div className="sb-footer-para mt-3 ml-3">
+            <div className="sb-footer-para ml-9 mb-5">
               <p class="font-inter font-normal text-gray-300 font-medium text-base leading-6">
                 We create digital experiences for brands and companies by using
                 technology.
               </p>
             </div>
-            <div className="sb-footer-newsletter mt-5 mr-80">
-              <form className="newsletter">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="email12 text-white-300 rounded-full"
-                />
-                <button type="submit" className="subscribe-btn12">
-                  Subscribe
-                </button>
-              </form>
+            <div className="sb-footer-bellow-center mr-64">
+              <p>
+                <a
+                  href="https://www.facebook.com/cocreatelabs"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="social-link"
+                >
+                  <img src={facebooklogo} alt="" className="facebooklogo" />
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://twitter.com/cocreatelabs1"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="social-link"
+                >
+                  <img src={twitterlogo} alt="" className="twitterlogo" />
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.instagram.com/cocreatelabsofficial/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="social-link"
+                >
+                  <img src={instalogo} alt="" className="instalogo" />
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://www.linkedin.com/company/co-create-lab/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="social-link"
+                >
+                  <img src={linkdinlogo} alt="" className="linkdinlogo" />
+                </a>
+              </p>
             </div>
           </div>
 
@@ -90,7 +125,9 @@ const Footer = () => {
               <div className="rec1">
                 <img src={rec1} alt="" className="rec-1" />
                 <a href="#/">
-                  <p class="font-medium text-base leading-6 text-gray-400">I think really important to design with...</p>
+                  <p class="font-medium text-base leading-6 text-gray-400">
+                    I think really important to design with...
+                  </p>
                 </a>
                 <br />
                 <br />
@@ -99,7 +136,9 @@ const Footer = () => {
               <div className="rec1">
                 <img src={rec2} alt="" className="rec-2" />
                 <a href="#/">
-                  <p class="font-medium text-base leading-6 text-gray-400">Recognizing the need is the primary...</p>
+                  <p class="font-medium text-base leading-6 text-gray-400">
+                    Recognizing the need is the primary...
+                  </p>
                 </a>
                 <br />
                 <br />
@@ -119,36 +158,20 @@ const Footer = () => {
             <p>Legal notice</p>
             <p>Terms of service</p>
           </div>
-          <div className="sb-footer-bellow-center">
-            <p>
-              <a href="https://www.facebook.com/cocreatelabs" target="_blank" rel="noreferrer">
-                <img src={facebooklogo} alt="" className="facebooklogo" />
-              </a>
-            </p>
-            <p>
-                <a href="https://twitter.com/cocreatelabs1" target="_blank" rel="noreferrer">
-              <img src={twitterlogo} alt="" className="twitterlogo"/>
-              </a>
-              </p>
-            <p>
-              <a href="https://www.instagram.com/cocreatelabsofficial/" target="_blank" rel="noreferrer">
-                <img src={instalogo} alt="" className="instalogo" />
-              </a>
-            </p>
-            <p>
-                <a href="https://www.linkedin.com/company/co-create-lab/" target="_blank" rel="noreferrer">
-              <img src={linkdinlogo} alt="" className="linkdinlogo" />
-              </a>
-            </p>
-          </div>
+
           <div className="sb-footer-bellow-right">
             <p>@Copyright{new Date().getFullYear()} -Co-Create Labs</p>
           </div>
         </div>
-      </div>
 
-      <div className="ellipse2">
-        <img src={ellipse2} alt="" className="ellipse2" />
+        <div className="ellipse2">
+          <img
+            src={ellipse2}
+            alt=""
+            className="ellipse2 ml-80"
+            class="img-fluid"
+          />
+        </div>
       </div>
     </div>
   );
