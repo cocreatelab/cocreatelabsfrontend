@@ -45,7 +45,7 @@ const Offerings = () => {
       <div className="offerings-rectangle-box mt-8">
         <div className="offerings-box-content flex flex-col md:flex-row">
           <div className="offerings-left-content">
-            <img src={Offeringsimg} alt="" className="offeringsimg1" />
+            <img src={Offeringsimg} alt="" className="offeringsimg1" class="img-fluid"/>
             <div className="case-study-container">
               <div className="case-study-title">
                 <p>
