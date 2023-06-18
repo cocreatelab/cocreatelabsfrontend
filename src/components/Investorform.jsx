@@ -318,17 +318,13 @@ const InvestorForm = () => {
         <img src={group54} alt="Form" />
       </div>
       <div className="form-content">
-        <div className="stepper">
-          <div className="step active">1</div>
-        </div>
-
         <div p-5>
-          <h2 className="text-center font-poppins font-bold font-medium text-2xl leading-12 text-center tracking-wider capitalize text-black">
-            Join The Waiting List
-          </h2>
+          <p className="text-center font-poppins font-bold font-medium text-2xl leading-12 text-center tracking-wider capitalize text-black">
+            Join The Wait List
+          </p>
           <form onSubmit={handleSubmit}>
-            <div className="form-parent-container mt-10">
-              <div className="left-form-field flex flex-col grid gap-4">
+            <div className="form-parent-container flex flex-col grid gap-1 mt-10 rounded-full ml-14">
+              <div className="left-form-field flex flex-col">
                 <input
                   type="text"
                   name="name"
@@ -336,7 +332,7 @@ const InvestorForm = () => {
                   onChange={handleInputChange}
                   placeholder="Your Name"
                   required
-                  className="w-full"
+                  className="w-full rounded-full"
                 />
 
                 <input
@@ -346,11 +342,11 @@ const InvestorForm = () => {
                   onChange={handleInputChange}
                   placeholder="Startup Name"
                   required
-                  className="w-full"
+                  className="w-full rounded-full mt-5"
                 />
               </div>
 
-              <div className="right-form-field grid gap-4">
+              <div className="right-form-field mt-5">
                 <input
                   type="email"
                   name="email"
@@ -358,7 +354,7 @@ const InvestorForm = () => {
                   onChange={handleInputChange}
                   placeholder="Email"
                   required
-                  className="w-full"
+                  className="w-full rounded-full"
                 />
 
                 <input
@@ -368,12 +364,12 @@ const InvestorForm = () => {
                   onChange={handleInputChange}
                   placeholder="Contact Number"
                   required
-                  className="w-full"
+                  className="w-full rounded-full mt-5"
                 />
               </div>
             </div>
 
-            <button className="investorformbtn mt-10" type="submit">
+            <button className="investorformbtn mt-10 w-32 hover:text-white hover:bg-blue-800 outline-none" type="submit">
               Submit
             </button>
           </form>
@@ -384,4 +380,3 @@ const InvestorForm = () => {
 };
 
 export default InvestorForm;
-
