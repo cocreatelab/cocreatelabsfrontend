@@ -1,39 +1,4 @@
-/* #target {
-  width: 100vw;
-  animation: rightToLeft 15s linear infinite;
-}
-@keyframes rightToLeft {
-  0% {
-    transform: translateX(1300px);
-  }
-  100% {
-    transform: translateX(-1450px);
-  }
-}
 
-@media only screen and (max-width: 1024px) {
-  #target {
-    width: fit-content;
-    animation: rightToLeft 25s linear infinite;
-  }
-  @keyframes rightToLeft {
-    0% {
-      transform: translateX(400px);
-    }
-    100% {
-      transform: translateX(-1450px);
-    }
-  }
-}
-.logo-row {
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3rem 9rem 3rem 9rem;
-  gap: 10rem;
-  margin-left: 20px;
-}
- */
 .logo-parent-container{
   display: flex;
   background: #F4F7FF;
@@ -42,16 +7,11 @@
 
  .logo-container {
   display: flex;
-  /* justify-content: flex-start; */
-  /* background: #F4F7FF; */
-  /* position: fixed; */
-  gap: 7rem; /* Adjust the gap size as needed */
-  /* overflow: hidden; */
-  animation: rightToLeft 13s linear infinite; /* Add animation properties */
-  /* width: 100vw; */
-  width: 3000px;
+  gap: 7rem; 
+  animation: rightToLeft 13s linear infinite; 
+  width: 3200px;
   padding: 2em;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 @keyframes rightToLeft {
@@ -66,26 +26,22 @@
 @media only screen and (max-width: 1024px) {
   .logo-container {
     width: fit-content;
-    animation: rightToLeft 25s linear infinite; /* Adjust animation properties */
+    animation: rightToLeft 25s linear infinite; 
   }
 }
 
 .logo {
-  max-width: 100px; /* Adjust the logo size as needed */
+  max-width: 100px; 
   height: auto;
-  /* transition: transform 0.5s ease; Adjust the transition duration as needed */
 }
 
 
 @media only screen and (max-width: 768px) {
   .logo-container {
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
-    animation: rightToLeft 25s linear infinite; /* Adjust animation properties */
+    animation: rightToLeft 25s linear infinite; 
     width: 100%;
-
-    /* overflow: hidden; Adjust width property */
   }
 }
 
