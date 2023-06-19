@@ -1,18 +1,20 @@
 nav{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
   gap: 20rem;
+  width: 2000px;
   overflow: hidden;
   position: fixed;
   background-color: transparent;
 }
 
 .navbar-scrolled {
-  background-color: #ffffff; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 
 
 .navbar-logo-container {
@@ -39,29 +41,22 @@ nav{
   color: #111111;
 }
 
-/* Styles for the offerings dropdown menu */
 .offerings-dropdown-menu {
-  /* background-color: #f9f9f9; */
   color: #333;
   border: 1px solid #ccc;
   display: flex;
   gap: 10rem;
   margin-left: -2%;
-  /* Add more custom styles as needed */
 }
 
-/* Styles for the services dropdown menu */
 .services-dropdown-menu {
-  /* background-color: #eaeaea; */
   color: #555;
   border: 1px solid #aaa;
   margin-left: 8.7%;
-  /* Add more custom styles as needed */
 }
 
 
 .primary-button {
-  /* display: flex; */
   flex-direction: row;
   align-items: flex-start;
   padding: 5px 24px 10px;
@@ -80,7 +75,7 @@ nav{
 
 @media (max-width: 768px) {
   nav {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 2rem;
     margin: 0;
     padding: 1rem;
@@ -89,14 +84,15 @@ nav{
 
 @media (max-width: 480px) {
   nav {
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 1rem;
     padding: 0.5rem;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   nav{
+    display: flex;
     overflow: hidden;
   }
   .navbar-links-container {
@@ -125,11 +121,12 @@ nav{
     color: #111111;
   }
 
-  .navbar-logo-container {
+  /* .navbar-logo-container {
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 3em;
-  }
+  } */
 }
+
