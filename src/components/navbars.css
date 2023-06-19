@@ -4,10 +4,11 @@ nav{
   align-items: center;
   text-align: center;
   gap: 20rem;
-/*   width: 2000px; */
+  /* width: 2000px; */
   overflow: hidden;
   position: fixed;
   background-color: transparent;
+  /* margin-right: 10px; */
 }
 
 .navbar-scrolled {
@@ -86,7 +87,8 @@ nav{
   nav {
     /* flex-direction: column; */
     gap: 1rem;
-    padding: 0.5rem;
+    padding: 1rem;
+    margin-left: 10px;
   }
 }
 
@@ -94,6 +96,7 @@ nav{
   nav{
     display: flex;
     overflow: hidden;
+    margin-left: -10%;
   }
   .navbar-links-container {
     display: none;
@@ -129,4 +132,3 @@ nav{
     margin-left: 3em;
   } */
 }
-
