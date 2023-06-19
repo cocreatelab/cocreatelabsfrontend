@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+
+import React, { useState, useEffect, useRef } from "react";
 import Logo from "../assets/Logo1.png";
 import {
   Box,
@@ -29,13 +30,16 @@ const style = {
 };
 
 const Navbar = () => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const [openMenu, setOpenMenu] = useState(false);
   const [openOfferingsDropdown, setOpenOfferingsDropdown] = useState(false);
   const [openServicesDropdown, setOpenServicesDropdown] = useState(false);
   const [selectedOption, setSelectedOption] = useState("");
+  const [isScrolled, setIsScrolled] = useState(false);
+  const navbarRef = useRef(null);
+
   const menuOptions = [
     {
       text: "Home",
@@ -90,8 +94,26 @@ const Navbar = () => {
     handleCloseServicesDropdown();
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const shouldHaveShadow = scrollTop > 0;
+      setIsScrolled(shouldHaveShadow);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="flex items-center ml-20 justify-between px-4 py-2">
+    <nav
+      ref={navbarRef}
+      className={`px-4 py-2 ${
+        isScrolled ? "navbar-scrolled" : ""
+      }`}
+    >
       <div className="navbar-logo-container">
         <Link to="/">
           <img src={Logo} alt="logo" className="" />
@@ -210,7 +232,11 @@ const Navbar = () => {
         </div>
       )}
 
-      <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
+      <Drawer
+        open={openMenu}
+        onClose={() => setOpenMenu(false)}
+        anchor="right"
+      >
         <Fade in={openMenu}>
           <Box sx={{ width: 250 }}>
             <List>
