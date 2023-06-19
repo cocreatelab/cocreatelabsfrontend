@@ -8,12 +8,10 @@ import imgh3 from "../assets/Group 14.png";
 const Upcomingevents = () => {
   return (
     <div>
-      <div className="events-parent-container">
-      <div className="upcomingevents-container">
+      <div className="events-parent-container overflow-hidden">
+        <div className="upcomingevents-container">
           <div className="event-primary-heading">
-            <h3>
-              Upcoming Events
-            </h3>
+            <h3>Upcoming Events</h3>
           </div>
           <div className="event-primary-title">
             <p>
@@ -25,11 +23,26 @@ const Upcomingevents = () => {
         </div>
 
         <div className="event-card-container flex flex-wrap flex-row">
-        <img className="w-70 transform scale-100 hover:scale-105" src={imgh1} alt="" />
-        <img className="w-70 transform scale-100 hover:scale-105" src={imgh2} alt="" />
-        <img className="w-70 transform scale-100 hover:scale-105" src={imgh3} alt="" />
+          <img
+            className="w-70 transform scale-100 hover:scale-105"
+            src={imgh1}
+            alt=""
+            class="img-fluid"
+          />
+          <img
+            className="w-70 transform scale-100 hover:scale-105"
+            src={imgh2}
+            alt=""
+            class="img-fluid"
+          />
+          <img
+            className="w-70 transform scale-100 hover:scale-105"
+            src={imgh3}
+            alt=""
+            class="img-fluid"
+          />
         </div>
-    
+
         <div className="events-button-container">
           <button className="loadmore">Learn More</button>
         </div>
