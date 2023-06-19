@@ -4,7 +4,7 @@ nav{
   align-items: center;
   text-align: center;
   gap: 20rem;
-  width: 2000px;
+/*   width: 2000px; */
   overflow: hidden;
   position: fixed;
   background-color: transparent;
