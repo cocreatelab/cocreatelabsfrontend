@@ -13,7 +13,7 @@ const Offerings = () => {
       </p>
       <br />
       <div className="offerings-secondary-heading">
-        Connecting with leaders across the GLOBE
+        Connecting with <span className="blue-text text-blue-500">leaders across the GLOBE</span>
       </div>
       <br />
       <div className="offerings-primary-text">
@@ -45,9 +45,9 @@ const Offerings = () => {
       <div className="offerings-rectangle-box mt-8">
         <div className="offerings-box-content flex flex-col md:flex-row">
           <div className="offerings-left-content">
-            <img src={Offeringsimg} alt="" className="offeringsimg1" class="img-fluid"/>
+            <img src={Offeringsimg} alt="" className="offeringsimg1" class="img-fluid" />
             <div className="case-study-container">
-              <div className="case-study-title">
+              <div className="case-study-title" class="img-fluid">
                 <p>
                   <b>Case Study</b>
                 </p>
