@@ -110,7 +110,7 @@ const Navbar = () => {
   return (
     <nav
       ref={navbarRef}
-      className={`px-4 py-2 ml-20 ${
+      className={`px-40 py-3 ${
         isScrolled ? "navbar-scrolled" : ""
       }`}
     >
