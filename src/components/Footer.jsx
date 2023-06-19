@@ -4,11 +4,16 @@ import footerlogo from "../assets/logomain.png";
 import facebooklogo from "../assets/facebook.png";
 import twitterlogo from "../assets/twitter.png";
 import instalogo from "../assets/insta.png";
-import linkdinlogo from "../assets/linkdin.png";
+import linkdinlogo from "../assets/linkdin-icon.png";
 import rec1 from "../assets/Rectangle1.jpg";
 import rec2 from "../assets/Rectangle2.jpg";
 import ellipse1 from "../assets/Ellipse1.png";
 import ellipse2 from "../assets/Ellipse2.png";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import { FaLinkedin } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <div className="footer">
@@ -32,7 +37,7 @@ const Footer = () => {
                 technology.
               </p>
             </div>
-            <div className="sb-footer-bellow-center mr-64">
+            <div className="sb-footer-bellow-center mr-40">
               <p>
                 <a
                   href="https://www.facebook.com/cocreatelabs"
@@ -40,7 +45,8 @@ const Footer = () => {
                   rel="noreferrer"
                   className="social-link"
                 >
-                  <img src={facebooklogo} alt="" className="facebooklogo" />
+                  {/* <img src={facebooklogo} alt="" className="facebooklogo" /> */}
+                  <FacebookIcon color="primary" />
                 </a>
               </p>
               <p>
@@ -50,7 +56,8 @@ const Footer = () => {
                   rel="noreferrer"
                   className="social-link"
                 >
-                  <img src={twitterlogo} alt="" className="twitterlogo" />
+                  {/* <img src={twitterlogo} alt="" className="twitterlogo" /> */}
+                  <TwitterIcon color="success" />
                 </a>
               </p>
               <p>
@@ -60,7 +67,8 @@ const Footer = () => {
                   rel="noreferrer"
                   className="social-link"
                 >
-                  <img src={instalogo} alt="" className="instalogo" />
+                  {/* <img src={instalogo} alt="" className="instalogo" /> */}
+                  <InstagramIcon color="secondary" />
                 </a>
               </p>
               <p>
@@ -70,7 +78,8 @@ const Footer = () => {
                   rel="noreferrer"
                   className="social-link"
                 >
-                  <img src={linkdinlogo} alt="" className="linkdinlogo" />
+                  {/* <img src={linkdinlogo} alt="" className="linkdinlogo mt-2" class="img-fluid" /> */}
+                  <FaLinkedin color="yellow" className="w-5 h-6 mt-1"/>
                 </a>
               </p>
             </div>
