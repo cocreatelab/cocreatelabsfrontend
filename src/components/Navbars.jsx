@@ -17,7 +17,6 @@ import { Fade } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import "./navbars.css";
 import { Drawer } from "@mui/material";
-// import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import InvestorForm from "./Investorform";
 
@@ -109,11 +108,6 @@ const Navbar = () => {
                   ? handleOpenOfferingsDropdown
                   : handleOpenServicesDropdown
               }
-              // onMouseLeave={
-              //   item.text === "Offerings"
-              //     ? handleCloseOfferingsDropdown
-              //     : handleCloseServicesDropdown
-              // }
             >
               <Link className="text-gray-800 cursor-pointer hover:text-blue-500">
                 {item.text}
@@ -126,6 +120,7 @@ const Navbar = () => {
                   MenuListProps={{
                     "aria-labelledby": "dropdown-offerings",
                   }}
+                  className="navbar-dropdown-menu offerings-dropdown-menu"
                 >
                   {item.options.map((option) => (
                     <MenuItem
@@ -157,6 +152,7 @@ const Navbar = () => {
                   MenuListProps={{
                     "aria-labelledby": "dropdown-services",
                   }}
+                  className="navbar-dropdown-menu services-dropdown-menu"
                 >
                   {item.options.map((option) => (
                     <MenuItem
@@ -185,21 +181,19 @@ const Navbar = () => {
             </Link>
           )
         )}
-        {/* <Link to="/register"> */}
-          <button className="primary-button p-4 text-bold" onClick={handleOpen}>
-            Join Us
-          </button>
-          <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-              >
-                <Box sx={style}>
-                  <InvestorForm />
-                </Box>
-              </Modal>
-        {/* </Link> */}
+        <button className="primary-button p-4 text-bold" onClick={handleOpen}>
+          Join Us
+        </button>
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style}>
+            <InvestorForm />
+          </Box>
+        </Modal>
       </div>
 
       {isMobile ? (
