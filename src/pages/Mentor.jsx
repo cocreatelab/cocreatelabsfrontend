@@ -38,8 +38,8 @@ export const Mentor = () => {
                 class="border-none w-1/5 font-dm-sans font-normal text-gray-400 text-base leading-6 tracking-wider"
               />
               
-              <div className="srch-btn rounded border-outline">
-                <button> Search </button>
+               <div className="srch-btn rounded border-outline w-24">
+                <button> <img src={srchbtn} alt="" className=""/> </button>
               </div>
             </div>
         
