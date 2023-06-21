@@ -96,7 +96,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
       const shouldHaveShadow = scrollTop > 0;
       setIsScrolled(shouldHaveShadow);
     };
@@ -110,9 +111,7 @@ const Navbar = () => {
   return (
     <nav
       ref={navbarRef}
-      className={`px-40 py-3 ${
-        isScrolled ? "navbar-scrolled" : ""
-      }`}
+      className={`px-40 py-3 ${isScrolled ? "navbar-scrolled" : ""}`}
     >
       <div className="navbar-logo-container">
         <Link to="/">
@@ -232,11 +231,7 @@ const Navbar = () => {
         </div>
       )}
 
-      <Drawer
-        open={openMenu}
-        onClose={() => setOpenMenu(false)}
-        anchor="right"
-      >
+      <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
         <Fade in={openMenu}>
           <Box sx={{ width: 250 }}>
             <List>
@@ -244,7 +239,7 @@ const Navbar = () => {
                 <ListItem key={item.text} disablePadding>
                   {item.dropdown ? (
                     <ListItemButton>
-                      <button className="primary-button">{item.text}</button>
+                      <button className="primary">{item.text}</button>
                     </ListItemButton>
                   ) : (
                     <ListItemButton
@@ -262,6 +257,22 @@ const Navbar = () => {
                   )}
                 </ListItem>
               ))}
+              <button
+                className="primary-button p-4 text-bold"
+                onClick={handleOpen}
+              >
+                Join Us
+              </button>
+              <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+              >
+                <Box sx={style}>
+                  <InvestorForm />
+                </Box>
+              </Modal>
             </List>
             <Divider />
           </Box>
