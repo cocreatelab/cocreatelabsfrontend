@@ -13,10 +13,14 @@
 
 
 .fixed-navbar {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
-/*   width: 100%; */
+  width: 100%;
+  margin-top: 2%;
+  /* padding: 2em; */
   z-index: 1200;
-  background: transparent; /* Adjust the z-index as needed */
+  /* margin-left: 70%; */
+  background: transparent; 
 }
