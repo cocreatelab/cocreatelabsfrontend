@@ -12,15 +12,15 @@ const Investapply = () => {
       <Fade bottom distance='20%' duration={1000} delay={100}>
         <div className="invest-apply-top-container">
           <h1 className="investapply-primary-heading font-dm-sans font-bold text-4xl leading-16 text-blue-900">How To Apply</h1>
-          <p className="invest-apply-primary-text">
+          <p className="invest-apply-primary-text mt-10">
             We understand the challenges that startups face when it comes to
-            securing investment, and we're here to make it easier. <br /> <br />{" "}
+            securing investment, and we're here to make it easier.<br />{" "}
             Our platform provides a simple way for startups to connect with
             investors and VC funds that are actively looking for new
             opportunities to invest in.
           </p>
-          <div className="get-intouch-btn">
-            <a href="">Get in touch with us</a>
+          <div className="get-intouch-btn mt-6 mb-8">
+            <a href="" className="text-blue-500 transform scale-100 scale-105">Get in touch with us</a>
           </div>
         </div>
         <div className="invest-apply-cards-container">
