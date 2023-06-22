@@ -5,6 +5,9 @@ import welcome from "../assets/welcomebg.png";
 import maninblue from "../assets/man-in-blue.png";
 import globalpresence from "../assets/Global Presence.png";
 import Fade from "react-reveal/Fade";
+import srchbtn from "../assets/srchbtn.png";
+import srchbtn from "../assets/srchbtn.png";
+
 
 export const Mentor = () => {
   return (
