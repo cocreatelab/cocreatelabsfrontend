@@ -1,5 +1,5 @@
 .sb-footer{
-  margin-top: -24rem;
+  /* margin-top: -24rem; */
   padding: 2em;
 }
 .footer{
@@ -175,6 +175,9 @@ color: #8890A4;
 
 
 
+
+
+
 @media only screen and (max-width: 600px) {
   .footer {
     height: 1050px;
@@ -182,7 +185,7 @@ color: #8890A4;
     margin-top: -1.2%;
   }
   .sb-footer {
-    margin-top: -75%;
+    /* margin-top: -75%; */
     flex-direction: column;
     overflow: hidden;
   }
