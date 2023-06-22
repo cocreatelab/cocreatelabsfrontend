@@ -1,3 +1,4 @@
+
 import React from "react";
 import "../CSS/mentor.css";
 import howitworks from "../assets/howitworks.png";
@@ -6,8 +7,6 @@ import maninblue from "../assets/man-in-blue.png";
 import globalpresence from "../assets/Global Presence.png";
 import Fade from "react-reveal/Fade";
 import srchbtn from "../assets/srchbtn.png";
-import srchbtn from "../assets/srchbtn.png";
-
 
 export const Mentor = () => {
   return (
@@ -41,7 +40,7 @@ export const Mentor = () => {
                 class="border-none w-1/5 font-dm-sans font-normal text-gray-400 text-base leading-6 tracking-wider"
               />
               
-               <div className="srch-btn rounded border-outline w-24">
+              <div className="srch-btn rounded border-outline w-24">
                 <button> <img src={srchbtn} alt="" className=""/> </button>
               </div>
             </div>
@@ -110,5 +109,3 @@ export const Mentor = () => {
     </>
   );
 };
-
-// export default Mentor;
