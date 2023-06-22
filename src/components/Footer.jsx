@@ -17,9 +17,9 @@ import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="Ellipse">
+      {/* <div className="Ellipse">
         <img src={ellipse1} alt="" className="Ellipse" class="img-fluid" />
-      </div>
+      </div> */}
       <div className="sb-footer ">
         <div className="sb-footer-link">
           <div className="sb-footer-left contener ml-10">
@@ -127,7 +127,7 @@ const Footer = () => {
             </a>
             <br />
           </div>
-          <div className="sb-footer-link-div">
+          <div className="sb-footer-link-div mb-9">
             <h4>Latest blog</h4>
             <br />
             <div className="rec-container">
