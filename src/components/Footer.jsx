@@ -37,7 +37,7 @@ const Footer = () => {
                 technology.
               </p>
             </div>
-            <div className="sb-footer-bellow-center mr-40">
+            <div className="sb-footer-bellow-center mr-60">
               <p>
                 <a
                   href="https://www.facebook.com/cocreatelabs"
@@ -127,7 +127,7 @@ const Footer = () => {
             </a>
             <br />
           </div>
-          <div className="sb-footer-link-div mb-9">
+          {/* <div className="sb-footer-link-div mb-9">
             <h4>Latest blog</h4>
             <br />
             <div className="rec-container">
@@ -157,7 +157,7 @@ const Footer = () => {
                 <br />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <br />
         <hr></hr>
