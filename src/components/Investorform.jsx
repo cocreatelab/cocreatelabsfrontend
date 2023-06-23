@@ -283,6 +283,7 @@ import React, { useState } from "react";
 import "./investorform.css";
 import group54 from "../assets/Group54.png";
 import API from '../api/api';
+import axios from 'axios';
 
 const InvestorForm = () => {
   const [formData, setFormData] = useState({
@@ -305,7 +306,7 @@ const InvestorForm = () => {
     event.preventDefault();
     // Perform form submission logic here
     console.log(formData);
-            API.post('api/join-waitlist/',formData).then((d)=>{
+            axios.post('http://kashishjain.pythonanywhere.com/api/join-waitlist/',formData).then((d)=>{
           console.log("response: ",d.status,d)  
           if(d.status==400){
                 setMessage('Already Registered');
