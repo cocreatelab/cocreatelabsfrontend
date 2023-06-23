@@ -282,6 +282,7 @@
 import React, { useState } from "react";
 import "./investorform.css";
 import group54 from "../assets/Group54.png";
+import API from '../api/api';
 
 const InvestorForm = () => {
   const [formData, setFormData] = useState({
@@ -291,6 +292,7 @@ const InvestorForm = () => {
     contactNumber: "",
   });
 
+  const [message,setMessage]=useState('');
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
@@ -303,6 +305,23 @@ const InvestorForm = () => {
     event.preventDefault();
     // Perform form submission logic here
     console.log(formData);
+            API.post('api/join-waitlist/',formData).then((d)=>{
+          console.log("response: ",d.status,d)  
+          if(d.status==400){
+                setMessage('Already Registered');
+            };
+          if(d.status==201){
+                setMessage('Successfully joined the waitlist');
+                
+            };  
+        
+            
+        })
+        .catch((err)=>{
+            console.log(err.response.data.error);
+            setMessage(err.response.data.error);
+        });
+    
     // Reset the form data
     setFormData({
       name: "",
@@ -319,6 +338,7 @@ const InvestorForm = () => {
       </div>
       <div className="form-content">
         <div p-5>
+          <p className="text-center"  style={{color:"red"}}>{message}</p>
           <p className="text-center font-poppins font-bold font-medium text-2xl leading-12 text-center tracking-wider capitalize text-black">
             Join The Wait List
           </p>
