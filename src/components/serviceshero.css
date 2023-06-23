@@ -32,3 +32,8 @@
 .services-card:hover{
         scale: 10px;
 }
+
+.services-list-container{
+    display: flex;
+    margin-top: -4%;
+}
