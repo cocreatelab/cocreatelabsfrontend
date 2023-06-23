@@ -2,7 +2,7 @@
 import React from "react";
 import "../CSS/mentor.css";
 import howitworks from "../assets/howitworks.png";
-import welcome from "../assets/welcomebg.png";
+// import welcome from "../assets/welcomebg.png";
 import maninblue from "../assets/man-in-blue.png";
 import globalpresence from "../assets/Global Presence.png";
 import Fade from "react-reveal/Fade";
@@ -23,7 +23,7 @@ export const Mentor = () => {
               Connect on your own schedule, from anywhere in the world.
             </div>
             
-            <div class="bg-white border border-gray-200 shadow-sm rounded-full p-2 w-3/4 flex flex-1 m grid-row gap-2-row mt-10 ml-20">
+            {/* <div class="bg-white border border-gray-200 shadow-sm rounded-full p-2 w-3/4 flex flex-1 m grid-row gap-2-row mt-10 ml-20">
               <input
                 type="text"
                 placeholder="Search by company, language or role"
@@ -43,7 +43,7 @@ export const Mentor = () => {
               <div className="srch-btn rounded border-outline w-24">
                 <button> <img src={srchbtn} alt="" className=""/> </button>
               </div>
-            </div>
+            </div> */}
         
           </div>
         
@@ -100,6 +100,7 @@ export const Mentor = () => {
       <section className="go-to flex">
         <img src={maninblue} className="w-full h-full responsive_img" alt="imgw" />
       </section>
+
       </Fade>
       <Fade bottom distance='30%' duration={2000} delay={100}>
       <section className="go-to-presence flex p-40 mx-auto">
@@ -109,3 +110,5 @@ export const Mentor = () => {
     </>
   );
 };
+
+// export default Mentor;
