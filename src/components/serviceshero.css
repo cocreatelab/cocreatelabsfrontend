@@ -1,0 +1,39 @@
+.serviceshero
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.services-desc{
+    /* display: flex; */
+    /* width: 3000px; */
+    /* margin-right: 20%; */
+}
+
+.service-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    gap: 4rem;
+    margin-bottom: 4%;
+}
+
+.services-card-content{
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+
+}
+
+.services-card:hover{
+        scale: 10px;
+}
+
+.services-list-container{
+    display: flex;
+    margin-top: -4%;
+}

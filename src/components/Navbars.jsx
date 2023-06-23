@@ -53,14 +53,14 @@ const Navbar = () => {
     },
     {
       text: "Services",
-      dropdown: true,
-      options: [
-        "Business Canvas",
-        "Financial Modelling",
-        "Pitch Deck creation",
-        "Investor ready Kit",
-        "Startup Tech Kit",
-      ],
+      // dropdown: true,
+      // options: [
+      //   "Business Canvas",
+      //   "Financial Modelling",
+      //   "Pitch Deck creation",
+      //   "Investor ready Kit",
+      //   "Startup Tech Kit",
+      // ],
     },
     {
       text: "Contact",
@@ -164,7 +164,7 @@ const Navbar = () => {
                   ))}
                 </Menu>
               )}
-              {item.text === "Services" && openServicesDropdown && (
+              {/* {item.text === "Services" && openServicesDropdown && (
                 <Menu
                   anchorEl={document.querySelector(".navbar-dropdown")}
                   open={openServicesDropdown}
@@ -183,7 +183,7 @@ const Navbar = () => {
                     </MenuItem>
                   ))}
                 </Menu>
-              )}
+              )} */}
             </div>
           ) : (
             <Link
@@ -191,8 +191,11 @@ const Navbar = () => {
               to={
                 item.text === "About"
                   ? "/about"
+                  : item.text === "Services"
+                  ? "/services"
                   : item.text === "Contact"
                   ? "/contact"
+                  
                   : "/"
               }
               className="text-gray-800 hover:text-blue-500"
