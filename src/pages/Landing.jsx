@@ -27,7 +27,7 @@ export const Landing = () => {
       {<Whyjoin />}
       {<Joinnow />}
       {<UpcomingEvent />}
-      {<Changemaker />}
+{/*       {<Changemaker />} */}
       {<Knowledge />}
       {<Bluerectangle />}
       {<Accordion />}
