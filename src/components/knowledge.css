@@ -1,83 +1,11 @@
-/* .knowledge-parent-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3em 1em 7em 1em;
-}
-
-.knowledge-heading{
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 48px;
-line-height: 64px;
-color: #282938;
-margin-bottom: 2%;
-}
-
-.knowledge-card-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-left: 10%;
-        padding: 2em;
-}
-
-.knowledge-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    text-align: left;
-    gap: 1rem;
-    transition: all 0.3s ease;
-}
-
-.knowledge-card:hover{
-    transform: scale(1.05);
-}
-
-.knowledge-date-container{
-    
-}
-
-.knowledge-card-heading h5{
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 36px;
-    color: #1C1E53;
-    width: 67%;
-}
-
-.knowledge-card-primary-text{
-        width: 60%;
-        margin-top: -15px;
-}
-
-.card-readmore-conatainer button{
-    font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 28px;
-color: #1C1E53;
-}
-
-.readmore{
-    display: flex;
-} */
-
 .knowledge-parent-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 3em 1em 7em 1em;
+    background-color: #F4F7FF;;
   }
   
   .knowledge-heading {
@@ -150,6 +78,9 @@ color: #1C1E53;
   /* Responsive Styles */
   
   @media (max-width: 768px) {
+    .knowledge-parent-container{
+      margin-left: 10%;
+    }
     .knowledge-card-container {
       margin-left: 0; /* Adjusted margin for small screens */
     }
