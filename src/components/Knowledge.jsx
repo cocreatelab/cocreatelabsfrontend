@@ -13,7 +13,7 @@ const Knowledge = () => {
           <div className="knowledge-heading">Knowledge Center</div>
           <div className="knowledge-card-container">
             <a
-              href="https://inc42.com/features/meet-the-30-women-torchbearers-of-indias-startup-investment-space/"
+              href="https://www.linkedin.com/pulse/gen-z-millennials-entrepreneurship-start-ups-mentors-oh/"
               target="_blank"
               rel="noreferrer"
             >
@@ -46,7 +46,7 @@ const Knowledge = () => {
             </a>
 
             <a
-              href="https://www.livemint.com/news/india/starting-your-own-business-these-govt-schemes-can-support-your-startup-in-india-11685418342307.html"
+              href="https://www.linkedin.com/pulse/finding-right-entrepreneurship-start-up-community-success/?utm_source=share&utm_medium=member_android&utm_campaign=share_via"
               target="_blank"
               rel="noreferrer"
             >
@@ -78,7 +78,7 @@ const Knowledge = () => {
               </div>
             </a>
             <a
-              href="https://economictimes.indiatimes.com/tech/startups/budget-2023-to-give-lot-of-support-to-indias-startup-ecosystem-piyush-goyal/articleshow/97542339.cms?from=mdr"
+              href="https://www.linkedin.com/pulse/embracing-time-off-cultivating-environment-rest-recharge-1c/?utm_source=share&utm_medium=member_android&utm_campaign=share_via"
               target="_blank"
               rel="noreferrer"
             >
