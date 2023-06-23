@@ -6,6 +6,7 @@
     align-items: center;
     padding: 4%0%4%0%;
     flex-wrap: wrap;
+    margin-top: -7%;
 }
 
 
@@ -138,7 +139,7 @@ width: 80%;
         align-items: center;
         text-align: center;
         overflow: hidden;
-        /* margin-left: -10px; */
+        margin-left: -10px;
     }
 
     .event-primary-title{
