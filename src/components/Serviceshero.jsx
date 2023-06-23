@@ -7,7 +7,7 @@ import service3 from "../assets/Work Card (3).png"
 import service4 from "../assets/Work Card (2).png"
 import service5 from "../assets/Work Card (1).png"
 import service6 from "../assets/Work Card.png"
-import servicesregister from "../assets/servicesregister.png"
+// import servicesregister from "../assets/servicesregister.png"
 import serviceslist from "../assets/serviceslist.png"
 import Fade from "react-reveal/Fade"
 import "./serviceshero.css";
