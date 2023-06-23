@@ -7,8 +7,11 @@ import service3 from "../assets/Work Card (3).png"
 import service4 from "../assets/Work Card (2).png"
 import service5 from "../assets/Work Card (1).png"
 import service6 from "../assets/Work Card.png"
+import servicesregister from "../assets/servicesregister.png"
+import serviceslist from "../assets/serviceslist.png"
 import Fade from "react-reveal/Fade"
 import "./serviceshero.css";
+
 const Serviceshero = () => {
   return (
     <>
@@ -50,6 +53,14 @@ const Serviceshero = () => {
           </div>
         </div>
       </div>
+
+      <div className="services-list-container">
+        <img src={serviceslist} alt="" />
+      </div>
+
+      {/* <div className="build-together-btn w-full">
+        <img src={servicesregister} alt="" />
+      </div> */}
       </Fade>
     </>
   );
