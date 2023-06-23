@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button, Typography, Grid } from "@mui/material";
 import { PlayCircleFilled } from "@mui/icons-material";
@@ -6,6 +6,7 @@ import Building from "../assets/background1.png";
 import Building1 from "../assets/Component 38.png";
 import { styled } from "@mui/system";
 import Fade from "react-reveal/Fade";
+import Modal from "react-modal";
 
 const ParentContainerHome = styled("div")`
   background-image: url(${Building});
@@ -32,7 +33,7 @@ const HomeLeftContent = styled("div")`
 `;
 
 const HomePrimaryHeading = styled("h5")`
-  font-family: 'Anek Gujarati';
+  font-family: "Anek Gujarati";
   font-style: normal;
   font-weight: 400;
   width: 90%;
@@ -44,7 +45,7 @@ const HomePrimaryHeading = styled("h5")`
 `;
 
 const HomePrimaryText = styled("p")`
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -72,7 +73,7 @@ const SecondaryButton1 = styled(Button)`
   border-radius: 2rem;
   border: none;
   cursor: pointer;
-  height:60px;
+  height: 60px;
   transition: all 0.3s ease;
 `;
 
@@ -88,16 +89,37 @@ const SecondaryButton2 = styled(Button)`
   border-radius: 2rem;
   border: none;
   cursor: pointer;
-  height:60px;
+  height: 60px;
   transition: all 0.3s ease;
 `;
 
 const BuildingImg = styled("img")`
   width: 2890px;
   height: auto;
+  cursor: pointer;
 `;
 
+const ModalContent = styled("div")`
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const YouTubeEmbed = styled("iframe")``;
+
 const Home = () => {
+  const [videoModalOpen, setVideoModalOpen] = useState(false);
+
+  const openVideoModal = () => {
+    setVideoModalOpen(true);
+  };
+
+  const closeVideoModal = () => {
+    setVideoModalOpen(false);
+  };
+
   return (
     <>
       <ParentContainerHome>
@@ -121,26 +143,44 @@ const Home = () => {
                         Start Growing
                       </SecondaryButton1>
                     </Link>
-                    <Link to="/about">
-                      <SecondaryButton2 variant="contained">
-                        <PlayCircleFilled sx={{ width: 50, height: 30 }} />
-                        Who are we
-                      </SecondaryButton2>
-                    </Link>
+                    <SecondaryButton2
+                      variant="contained"
+                      onClick={openVideoModal}
+                    >
+                      <PlayCircleFilled sx={{ width: 50, height: 30 }} />
+                      Who are we
+                    </SecondaryButton2>
                   </Wrapper>
                 </HomeLeftContent>
               </Grid>
               <Grid item md={6}>
-                <BuildingImg src={Building1} alt="" />
+                <BuildingImg src={Building1} alt="" onClick={openVideoModal} />
               </Grid>
             </Grid>
           </Fade>
         </HomeContainer>
       </ParentContainerHome>
+
+      <Modal
+        isOpen={videoModalOpen}
+        onRequestClose={closeVideoModal}
+        contentLabel="Video Modal"
+        className="w-2/3 outline-none ml-60 bg-transparent align-center h-4/5 mt-40"
+      >
+        <ModalContent className="w-3/4 ml-40 h-3/4 justify-center">
+          <YouTubeEmbed
+            src="https://www.youtube.com/embed/raXLsIiOz1w"
+            title="Google Drive video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            autoplay
+            className="w-full h-full"
+          />
+        </ModalContent>
+      </Modal>
     </>
   );
 };
 
 export default Home;
-
-
