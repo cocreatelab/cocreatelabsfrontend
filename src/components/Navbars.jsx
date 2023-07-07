@@ -110,7 +110,7 @@ const Navbar = () => {
   return (
     <nav
       ref={navbarRef}
-      className={`px-40 py-3 ${isScrolled ? "navbar-scrolled" : ""}`}
+      className={`px-4 py-4 ${isScrolled ? "navbar-scrolled" : ""}`}
     >
       <div className="navbar-logo-container">
         <Link to="/">
@@ -195,7 +195,7 @@ const Navbar = () => {
                   ? "/services"
                   : item.text === "Contact"
                   ? "/contact"
-                  
+
                   : "/"
               }
               className="text-gray-800 hover:text-blue-500"
@@ -204,7 +204,7 @@ const Navbar = () => {
             </Link>
           )
         )}
-        <button className="primary-button p-4 text-bold" onClick={handleOpen}>
+        <button className="primary-button p-3 text-bold bg-black text-white rounded-full w-24 hover:text-blue-500" onClick={handleOpen}>
           Join Us
         </button>
         <Modal
@@ -222,7 +222,7 @@ const Navbar = () => {
       {isMobile ? (
         <div className="navbar-menu-container">
           <IconButton onClick={() => setOpenMenu(true)}>
-            <MenuIcon />
+            <MenuIcon sx={{ fontSize: "4rem" }}/>
           </IconButton>
         </div>
       ) : (
@@ -253,14 +253,15 @@ const Navbar = () => {
                           ? "/contact"
                           : "/"
                       }
+
                     >
-                      <ListItemText primary={item.text} />
+                      <ListItemText primary={item.text} className="navbar-drawer-item"/>
                     </ListItemButton>
                   )}
                 </ListItem>
               ))}
               <button
-                className="primary-button p-4 text-bold"
+                className="primary-button p-4 text-xl"
                 onClick={handleOpen}
               >
                 Join Us
