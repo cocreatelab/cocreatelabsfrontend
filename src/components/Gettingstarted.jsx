@@ -49,7 +49,7 @@ const Gettingstarted = () => {
           <div className="button-container mt-8">
             <button
               id="btn1"
-              className="bg-blue-500 text-white px-4 py-2 rounded-md mr-4"
+              className="bg-blue-500 text-black rounded-md mr-4"
             >
               Sign Up{" "}
               <span>
@@ -58,7 +58,7 @@ const Gettingstarted = () => {
             </button>
             <button
               id="btn2"
-              className="bg-green-500 text-white px-4 py-2 rounded-md"
+              className="bg-green-500 text-black rounded-md"
             >
               Get Free Credit
             </button>
