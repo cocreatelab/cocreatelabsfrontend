@@ -10,7 +10,7 @@
 
 .join-primary-heading {
   text-align: center;
-  width: 30%;
+  /* width: 30%; */
   color: black;
   margin-bottom: 3px;
   font-family: "Poppins";
@@ -42,7 +42,6 @@
   border-radius: 10px;
   border: 1px solid #ddd;
   width: 364.77px;
-  /* height: 350px; */
   padding: 10% 30% 12% 30%;
 }
 
@@ -69,7 +68,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  /* align-items: center; */
   gap: 7rem;
 }
 
@@ -78,7 +77,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   gap: 6rem;
-  align-items: center;
+  /* align-items: center; */
   background: white;
   padding: 1% 5% 1% 10%;
 }
@@ -86,17 +85,19 @@
 .join-text-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: flex-start;
+  /* width: 50%; */
+  gap: 1rem;
 }
 
 .join-img-section img {
   /* width: 603.9px; */
-  height: 398px;
+  /* height: 398px; */
 }
-.responsive-img{
+/* .responsive-img{
   padding: 1.4em;
-}
+} */
 
 .join-parent-conatainer2 {
   display: flex;
@@ -105,7 +106,7 @@
   align-items: center;
   height: 654px;
   background: #f4f6fc;
-  gap: 3rem;
+  /* gap: 3rem; */
   padding: 1% 5% 1% 11%;
 }
 
@@ -153,16 +154,12 @@
 /* Media queries for responsive layout */
 @media only screen and (max-width: 1200px) {
   .card-container {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding: 1% 2% 1% 2%;
     gap: 2rem;
+
   }
 
   .card {
     width: 100%;
-    max-width: 600px;
-    padding: 20% 10% 20% 10%;
   }
 }
 
@@ -170,8 +167,12 @@
   .card h2 {
     font-size: 24px;
   }
-}
 
+  .join-parent-conatainer2{
+    flex-direction: row-reverse;
+  }
+}
+/* 
 @media only screen and (max-width: 480px) {
   .card-container {
     flex-direction: column;
@@ -196,8 +197,6 @@
 
   .whyjoin-parent-container {
     flex-direction: column;
-    /* padding-left: 1%;
-    padding-right: 1%; */
     justify-content: center;
     align-content: center;
     overflow: hidden;
@@ -220,8 +219,6 @@
 
   .join-parent-conatainer2 {
     flex-direction: column;
-    /* padding-left: 1%;
-    padding-right: 1%; */
     justify-content: center;
     align-content: center;
     overflow: hidden;
@@ -254,4 +251,4 @@
     font-size: 16px;
     line-height: 24px;
   }
-}
+} */
