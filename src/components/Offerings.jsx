@@ -3,6 +3,7 @@ import "./offerings.css";
 import Offeringsimg from "../assets/rectangle.png";
 import { Link } from "react-router-dom";
 import Fade from 'react-reveal/Fade';
+import single from "../assets/Single PF.png"
 
 const Offerings = () => {
   return (
@@ -27,26 +28,27 @@ const Offerings = () => {
       </div>
       <div className="offeringsbutton-container flex flex-col md:flex-row">
         <Link to="/mentor-connect">
-          <button className="mentorconnect hover:bg-blue-600 text-black font-bold py-2 px-4 rounded">
+          <button className="mentorconnect hover:bg-blue-600 text-black font-bold rounded">
             Mentor Connect
           </button>
         </Link>
         <Link to="/investor-connect">
-          <button className="investorconnect hover:bg-blue-600 text-black font-bold py-2 px-4 rounded">
+          <button className="investorconnect hover:bg-blue-600 text-black font-bold rounded">
             Investor Connect
           </button>
         </Link>
         <Link to="/grant-connect">
-          <button className="grantsconnect hover:bg-blue-600 text-black font-bold py-2 px-4 rounded">
+          <button className="grantsconnect hover:bg-blue-600 text-black font-bold rounded">
             Grants Connect
           </button>
         </Link>
       </div>
       <div className="offerings-rectangle-box mt-8">
+
         <div className="offerings-box-content flex flex-col md:flex-row">
           <div className="offerings-left-content">
-            <img src={Offeringsimg} alt="" className="offeringsimg1" class="img-fluid" />
-            <div className="case-study-container">
+            <Link to="/"><img src={single} alt="" className="offeringsimg1" class="img-fluid" /></Link>
+            {/* <div className="case-study-container ">
               <div className="case-study-title" class="img-fluid">
                 <p>
                   <b>Case Study</b>
@@ -60,7 +62,7 @@ const Offerings = () => {
                   Read Story
                 </button>
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="offerings-right-content">
             <div className="offerings-right-primary-title text-xl">
@@ -78,12 +80,12 @@ const Offerings = () => {
             </div>
             <div className="offerings-right-button-container mt-4">
               <Link to="/mentor">
-                <button className="findmentor hover:bg-blue-600 text-black font-bold py-2 px-4 rounded">
+                <button className="findmentor hover:bg-blue-600 text-black font-bold rounded">
                   Find Mentor
                 </button>
               </Link>
               <Link to="/mentor-connect">
-                <button className="becomementor hover:bg-blue-600 text-black font-bold py-2 px-4 rounded">
+                <button className="becomementor hover:bg-blue-600 text-black font-bold rounded">
                   Become Mentor
                 </button>
               </Link>
