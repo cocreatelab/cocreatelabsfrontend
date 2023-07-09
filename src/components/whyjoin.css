@@ -9,8 +9,10 @@
 }
 
 .join-primary-heading {
+  margin-top: 4%;
   text-align: center;
-  /* width: 30%; */
+  display: flex;
+  flex-wrap:wrap;
   color: black;
   margin-bottom: 3px;
   font-family: "Poppins";
