@@ -4,7 +4,6 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  /* margin-top: 84px; */
   padding: 3% 7%3%7%;
 }
 
@@ -37,7 +36,7 @@
   text-transform: capitalize;
   color: #111111;
 }
-.blue-text{
+.blue__text{
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -52,6 +51,8 @@
 }
 .offerings-primary-text{
   width: 70%;
+  align-items: center;
+  text-align: center;
 }
 
 .offerings-text1{
@@ -75,14 +76,15 @@
   margin-bottom: 43px;
 }
 .offeringsbutton-container button {
-  border-radius: 8px;
   width: 190px;
   height: 60px;
+  border-radius: 10px;
 }
 
 .mentorconnect,
 .investorconnect,
 .grantsconnect {
+  text-decoration: none;
   font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
@@ -102,10 +104,11 @@ border: 2px solid #0096f6;
 }
 
 .offerings-rectangle-box {
-  display: flex;
+  /* display: flex; */
   /* padding: 2% 6%; */
-  padding: 3em;
-  width: 85%;
+  /* padding: 3em; */
+  /* width: 85%; */
+  /* margin-left: -10%; */
   background: #f4f7ff;
   border-radius: 100px;
 }
@@ -115,85 +118,25 @@ border: 2px solid #0096f6;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 3em;
-  gap: 5rem;
+  padding: 3em 3em 1.7em 0em;
+  /* gap: 5rem; */
 }
 
 .offerings-left-content {
   display: flex;
-  flex-direction: column;
-  width: 90%;
-  /* flex-wrap: wrap; */
+  width: 80%;
   justify-content: center;
   align-items: center;
   margin-left: 50px;
 }
 
-.case-study-container {
-  margin-top: -82px;
-  display: flex;
-  width: 75%;
-  height: 270px;
-  flex-direction: column;
-  justify-content: center;
+.offerings-left-content2{
+  display: none;
   align-items: center;
-  background: #ffffff;
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
-  padding: 19% 10%;
-  gap: 1rem;
-}
-.case-study-title p {
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 7px;
-line-height: 20px;
-text-align: center;
-text-transform: capitalize;
-color: #0096F6;
-}
-
-.case-study-heading {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #212B36;
-}
-
-.case-study-button {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  width: 150px;
-  height: 50px;
-  padding: 2%2%2%2%;
-  margin-top: 20px;
-  background: transparent;
-  outline: none;
-  border: 2px solid  #0096F6;
-  border-radius: 8px;
-  text-align: center;
-  text-transform: capitalize;
-  color: #637381;
-}
-
-.case-study-button:hover {
-  border-color: #0096f6;
-  background-color: #0096f6;
-  color: white;
-}
-
-.offeringsimg1 {
-  width: 370px;
-  height: 300px;
-  border-radius: 10px;
+  margin-left: 90px;
+  width: 100%;
+  margin-top: 4%;
+  /* padding: 2em; */
 }
 
 .offerings-right-content {
@@ -236,11 +179,11 @@ color: #0096F6;
 .offerings-right-button-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  gap: 3rem;
-  margin-top: 34px;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+  /* align-items: center; */
+  gap: 1rem;
+  margin-top: 30px;
 }
 
 .findmentor,
@@ -252,8 +195,9 @@ color: #0096F6;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  width: 150px;
-  height: 60px;
+  /* width: 150px; */
+  /* height: 60px; */
+  padding: 1em;
   color: #0096F6;
   background: #f4f7ff;
   outline: none;
@@ -284,13 +228,68 @@ color: #0096F6;
     justify-content: center;
   }
 
+  .offerings-primary-heading{
+    color: #0096F6;
+text-align: center;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px;
+  }
+
+  .offerings-secondary-heading{
+    color: #111;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 125% */
+    letter-spacing: -0.582px;
+    text-transform: capitalize;
+  }
+
+  .blue__text{
+    color: #0096F6;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.582px;
+    text-transform: capitalize;
+  }
+.offerings-primary-text{
+  width: 100%;
+}
+  .offerings-primary-text p{
+    color: #637381;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
   .offeringsbutton-container{
     flex-direction: column;
     /* width: 30%; */
+    width: 370px;
+    
+  }
+  .offerings-rectangle-box {
+    background: #f4f7ff;
+    border-radius: 20px;
   }
 
   .offerings-left-content {
-    text-align: center;
+    display: none;
+  }
+
+  .offerings-left-content2{
+    display: flex;
   }
   .offerings-right-content{
     text-align: center;
@@ -301,10 +300,55 @@ color: #0096F6;
   .offeringsimg1 {
     width: 100%;
   }
+    .offerings-right-primary-title{
+      color: #0096F6;
+      text-align: center;
+      font-family: Inter;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+    }
 
+    .offerings-right-primary-heading{
+      color: #2E2E2E;
+      text-align: center;
+      font-family: Inter;
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px; /* 321.429% */
+      text-transform: capitalize;
+    }
+
+    .offerings-right-primary-text{
+      color: #637381;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+    .findmentor,
+    .becomementor{
+      width: 125px;
+      height: 32px;
+
+      color: #0096F6;
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+display: flex;
+    }
   .offerings-box-content{
     text-align: center;
     align-items: center;
     justify-content: center;
+    flex-direction: column-reverse;
   }
 }
