@@ -23,6 +23,9 @@
   /* cursor: pointer; */
  }
 
+ .modal-dialog-custom{
+  width: 1200px;
+ }
  .nav-links li button{
   width: 160px;
   padding: 0.6em;
