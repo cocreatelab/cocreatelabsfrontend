@@ -1,288 +1,173 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
+import { BsList } from "react-icons/bs";
 import Logo from "../assets/Logo1.png";
-import {
-  Box,
-  Divider,
-  IconButton,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
-  Menu,
-  MenuItem,
-  useMediaQuery,
-} from "@mui/material";
-import { Link } from "react-router-dom";
-import { Fade } from "@mui/material";
-import MenuIcon from "@mui/icons-material/Menu";
 import "./navbars.css";
-import { Drawer } from "@mui/material";
-import Modal from "@mui/material/Modal";
+import { Button, Dropdown, Offcanvas, Modal } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import InvestorForm from "./Investorform";
 
-const style = {
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: "65%",
-};
+const Navbars = () => {
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
+  const [navbarScrolled, setNavbarScrolled] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  // MODAL
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
-const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-  const [openMenu, setOpenMenu] = useState(false);
-  const [openOfferingsDropdown, setOpenOfferingsDropdown] = useState(false);
-  const [openServicesDropdown, setOpenServicesDropdown] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("");
-  const [isScrolled, setIsScrolled] = useState(false);
-  const navbarRef = useRef(null);
-
-  const menuOptions = [
-    {
-      text: "Home",
-    },
-    {
-      text: "About",
-    },
-    {
-      text: "Offerings",
-      dropdown: true,
-      options: ["Mentor Connect", "Investor Connect", "Grant Connect"],
-    },
-    {
-      text: "Services",
-      // dropdown: true,
-      // options: [
-      //   "Business Canvas",
-      //   "Financial Modelling",
-      //   "Pitch Deck creation",
-      //   "Investor ready Kit",
-      //   "Startup Tech Kit",
-      // ],
-    },
-    {
-      text: "Contact",
-    },
-  ];
-
-  const isMobile = useMediaQuery("(max-width: 768px)");
-
-  const handleOpenOfferingsDropdown = () => {
-    setOpenOfferingsDropdown(true);
-    setOpenServicesDropdown(false);
-  };
-
-  const handleCloseOfferingsDropdown = () => {
-    setOpenOfferingsDropdown(false);
-  };
-
-  const handleOpenServicesDropdown = () => {
-    setOpenServicesDropdown(true);
-    setOpenOfferingsDropdown(false);
-  };
-
-  const handleCloseServicesDropdown = () => {
-    setOpenServicesDropdown(false);
-  };
-
-  const handleOptionSelect = (option) => {
-    setSelectedOption(option);
-    handleCloseOfferingsDropdown();
-    handleCloseServicesDropdown();
-  };
+    // SCROLL
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-      const shouldHaveShadow = scrollTop > 0;
-      setIsScrolled(shouldHaveShadow);
+      const isScrolled = window.scrollY > 0;
+      setNavbarScrolled(isScrolled);
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
+  // OFFCANVAS
+
+  const handleToggle = () => {
+    setShowOffcanvas(!showOffcanvas);
+  };
+
+ 
+
   return (
-    <nav
-      ref={navbarRef}
-      className={`px-4 py-4 ${isScrolled ? "navbar-scrolled" : ""}`}
-    >
-      <div className="navbar-logo-container">
-        <Link to="/">
-          <img src={Logo} alt="logo" className="" />
-        </Link>
-      </div>
-      <div className="navbar-links-container">
-        {menuOptions.map((item) =>
-          item.dropdown ? (
-            <div
-              key={item.text}
-              className="navbar-dropdown relative"
-              onMouseEnter={
-                item.text === "Offerings"
-                  ? handleOpenOfferingsDropdown
-                  : handleOpenServicesDropdown
-              }
-            >
-              <Link className="text-gray-800 cursor-pointer hover:text-blue-500">
-                {item.text}
-              </Link>
-              {item.text === "Offerings" && openOfferingsDropdown && (
-                <Menu
-                  anchorEl={document.querySelector(".navbar-dropdown")}
-                  open={openOfferingsDropdown}
-                  onClose={handleCloseOfferingsDropdown}
-                  MenuListProps={{
-                    "aria-labelledby": "dropdown-offerings",
-                  }}
-                  className="navbar-dropdown-menu offerings-dropdown-menu"
-                >
-                  {item.options.map((option) => (
-                    <MenuItem
-                      key={option}
-                      onClick={() => handleOptionSelect(option)}
-                    >
-                      <Link
-                        to={
-                          option === "Mentor Connect"
-                            ? "/mentor-connect"
-                            : option === "Investor Connect"
-                            ? "/investor-connect"
-                            : option === "Grant Connect"
-                            ? "/grant-connect"
-                            : "/offerings"
-                        }
-                      >
-                        {option}
-                      </Link>
-                    </MenuItem>
-                  ))}
-                </Menu>
-              )}
-              {/* {item.text === "Services" && openServicesDropdown && (
-                <Menu
-                  anchorEl={document.querySelector(".navbar-dropdown")}
-                  open={openServicesDropdown}
-                  onClose={handleCloseServicesDropdown}
-                  MenuListProps={{
-                    "aria-labelledby": "dropdown-services",
-                  }}
-                  className="navbar-dropdown-menu services-dropdown-menu"
-                >
-                  {item.options.map((option) => (
-                    <MenuItem
-                      key={option}
-                      onClick={() => handleOptionSelect(option)}
-                    >
-                      {option}
-                    </MenuItem>
-                  ))}
-                </Menu>
-              )} */}
-            </div>
-          ) : (
-            <Link
-              key={item.text}
-              to={
-                item.text === "About"
-                  ? "/about"
-                  : item.text === "Services"
-                  ? "/services"
-                  : item.text === "Contact"
-                  ? "/contact"
-
-                  : "/"
-              }
-              className="text-gray-800 hover:text-blue-500"
-            >
-              {item.text}
-            </Link>
-          )
-        )}
-        <button className="primary-button p-3 text-bold bg-black text-white rounded-full w-24 hover:text-blue-500" onClick={handleOpen}>
-          Join Us
-        </button>
-        <Modal
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description"
-        >
-          <Box sx={style}>
-            <InvestorForm />
-          </Box>
-        </Modal>
-      </div>
-
-      {isMobile ? (
-        <div className="navbar-menu-container">
-          <IconButton onClick={() => setOpenMenu(true)}>
-            <MenuIcon sx={{ fontSize: "4rem" }}/>
-          </IconButton>
+    <>
+      <nav className={navbarScrolled ? "scrolled" : ""}>
+        <div className="nav-logo">
+          <img src={Logo} alt="" />
         </div>
-      ) : (
-        <div className="navbar-menu-container">
-          <IconButton onClick={() => setOpenMenu(true)}>
-            <MenuIcon />
-          </IconButton>
-        </div>
-      )}
-
-      <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
-        <Fade in={openMenu}>
-          <Box sx={{ width: 250 }}>
-            <List>
-              {menuOptions.map((item) => (
-                <ListItem key={item.text} disablePadding>
-                  {item.dropdown ? (
-                    <ListItemButton>
-                      <button className="primary">{item.text}</button>
-                    </ListItemButton>
-                  ) : (
-                    <ListItemButton
-                      component={Link}
-                      to={
-                        item.text === "About"
-                          ? "/about"
-                          : item.text === "Contact"
-                          ? "/contact"
-                          : "/"
-                      }
-
-                    >
-                      <ListItemText primary={item.text} className="navbar-drawer-item"/>
-                    </ListItemButton>
-                  )}
-                </ListItem>
-              ))}
+        <div>
+          <ul className="nav-links">
+            <a href="/"><li>
+              Home
+            </li></a>
+            <a href="/about"><li>
+              About
+            </li></a>
+            <li className="nav-dropdown">
+              <Dropdown>
+                <Dropdown.Toggle variant="light" id="offerings-dropdown">
+                  Offerings
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                  <Dropdown.Item>
+                    <Link to="/mentor-connect">Mentor Connect</Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link to="/investor-connect">Investor Connect</Link>
+                  </Dropdown.Item>
+                  <Dropdown.Item>
+                    <Link to="/grant-connect">Grant Connect</Link>
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+            </li>
+            <a href="/services"><li>
+              Services
+            </li></a>
+            <a href="/about"><li>
+              Contact
+            </li></a>
+            <li>
               <button
-                className="primary-button p-4 text-xl"
-                onClick={handleOpen}
+                type="button"
+                className="btn bg-black text-white rounded-pill"
+                onClick={handleShow}
               >
                 Join Us
               </button>
-              <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-              >
-                <Box sx={style}>
-                  <InvestorForm />
-                </Box>
-              </Modal>
-            </List>
-            <Divider />
-          </Box>
-        </Fade>
-      </Drawer>
-    </nav>
+            </li>
+          </ul>
+        </div>
+        <div className="nav-menu">
+          <button className="menu-icon" onClick={handleToggle}>
+            <BsList size={24} />
+          </button>
+          <Offcanvas
+            show={showOffcanvas}
+            onHide={() => setShowOffcanvas(false)}
+            placement="end"
+            style={{ width: "200px" }}
+          >
+            <Offcanvas.Header closeButton>
+              {/* <Offcanvas.Title>Menu</Offcanvas.Title> */}
+            </Offcanvas.Header>
+            <Offcanvas.Body className="menu">
+              <ul className="nav-menu-links">
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about">About</Link>
+                </li>
+                <li className="nav-dropdown">
+                  <Dropdown>
+                    <Dropdown.Toggle variant="light" id="offerings-dropdown">
+                      Offerings
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <Dropdown.Item>
+                        <Link to="/mentor-connect">Mentor Connect</Link>
+                      </Dropdown.Item>
+                      <Dropdown.Item>
+                        <Link to="/investor-connect">Investor Connect</Link>
+                      </Dropdown.Item>
+                      <Dropdown.Item>
+                        <Link to="/grant-connect">Grant Connect</Link>
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </li>
+                <li>
+                  <Link to="/services">Services</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    className="btn bg-black text-white rounded-pill"
+                    onClick={handleShow}
+                  >
+                    Join Us
+                  </button>
+                </li>
+              </ul>
+            </Offcanvas.Body>
+          </Offcanvas>
+        </div>
+      </nav>
+
+      <Modal
+        show={show}
+        onHide={handleClose}
+        dialogClassName="wide-modal"
+        centered
+      >
+        <Modal.Header closeButton>
+          {/* <Modal.Title>Vertically Centered Modal</Modal.Title> */}
+        </Modal.Header>
+        <Modal.Body>
+          {/* <p>This is the content of the modal.</p> */}
+          <InvestorForm/>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose} className="text-black">
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
   );
 };
 
-export default Navbar;
+export default Navbars;
