@@ -81,6 +81,7 @@ const Navbars = () => {
                 type="button"
                 className="btn bg-black text-white rounded-pill"
                 onClick={handleShow}
+                
               >
                 Join Us
               </button>
@@ -137,6 +138,7 @@ const Navbars = () => {
                     type="button"
                     className="btn bg-black text-white rounded-pill"
                     onClick={handleShow}
+                    
                   >
                     Join Us
                   </button>
@@ -150,14 +152,12 @@ const Navbars = () => {
       <Modal
         show={show}
         onHide={handleClose}
-        dialogClassName="wide-modal"
+        dialogClassName="wide-model"
         centered
+        // className="model-view"
+        style={{marginTop: '30px' }} 
       >
-        <Modal.Header closeButton>
-          {/* <Modal.Title>Vertically Centered Modal</Modal.Title> */}
-        </Modal.Header>
-        <Modal.Body>
-          {/* <p>This is the content of the modal.</p> */}
+        <Modal.Body>   
           <InvestorForm/>
         </Modal.Body>
         <Modal.Footer>
@@ -166,6 +166,8 @@ const Navbars = () => {
           </Button>
         </Modal.Footer>
       </Modal>
+
+
     </>
   );
 };
