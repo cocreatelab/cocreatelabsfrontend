@@ -48,7 +48,7 @@ const InvestorForm = () => {
             Join The Wait List
           </p>
           <form onSubmit={handleSubmit}>
-            <div className="form-parent-container flex flex-col grid gap-1 mt-10 rounded-full ml-14">
+            <div className="form-parent-container flex flex-col grid gap-1 mt-10 rounded-full">
               <div className="left-form-field flex flex-col">
                 <input
                   type="text"
