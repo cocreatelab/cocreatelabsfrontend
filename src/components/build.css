@@ -1,11 +1,18 @@
 .build-parent-container{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     background: #F4F7FF;
     padding: 5%9%5%9%;
     overflow: hidden;
+}
+
+.build-content{
+    display: flex;
+    flex-direction: row;
+    /* gap: 1rem; */
 }
 .wrap{
     color: #0096F6;
@@ -21,36 +28,40 @@
 }
 
 .build-left-content h1{
-    width: 60%;
-    font-family: 'DM Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 42px;
-line-height: 52px;
-letter-spacing: -0.4px;
-color: #1E0E62;
-width: 70%;
+    color: var(--colors-heading, #1E0E62);
+    /* Heading / H3 Title */
+    font-family: DM Sans;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px; /* 123.81% */
+    letter-spacing: -0.4px;
 }
 
 .build-primary-text{
-    font-family: 'DM Sans';
+    color: var(--colors-text, rgba(21, 20, 57, 0.80));
+    font-family: DM Sans;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 500;
-    font-size: 19px;
+    font-weight: 700;
     line-height: 26px;
-    color: rgba(21, 20, 57, 0.4);
-    mix-blend-mode: normal;
-    width: 64%;
 }
 .build-primary-text1{
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1px;
-    line-height: 26px;
     color: #0096F6;
-    mix-blend-mode: normal;
-    width: 60%;
+    /* Text / Paragraph */
+    font-family: DM Sans;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.build-primary-text2{
+    color: var(--colors-text, rgba(21, 20, 57, 0.80));
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
 }
 .build-left-btn-container{
     display: flex;
@@ -68,8 +79,26 @@ width: 70%;
     border-radius: 100px;
     outline: none;
     border: 1px solid #0096F6;
+    color: var(--colors-white, #000);
+    text-align: center;
+    
+    /* Buttons / Middle */
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 144.444% */
 }
-
+.build-left-btn-container a{
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 144.444% */
+}
+.build-left-btn-container a:hover{
+    color: #0096F6;
+}
 .build-left-btn-container button:hover{
     background: #0096F6;
     color: white;
@@ -80,70 +109,144 @@ width: 70%;
     width: 800px;
 }
 
+.build-right-content1{
+    display: none;
+}
 
 
 @media only screen and (max-width: 768px) {
     .build-parent-container {
         flex-direction: column;
         padding: 5% 2%;
+        align-items: center;
+        text-align: center;
     }
 
     .build-left-content {
         margin-left: 0;
         text-align: center;
+        align-items: center;
     }
 
     .build-left-content h1 {
-        width: 100%;
-        font-size: 36px;
-        line-height: 46px;
+        color: var(--colors-heading, #1E0E62);
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 125% */
+        letter-spacing: -0.4px;
     }
-
+        .build-primary-text p{
+            color: var(--colors-text, rgba(21, 20, 57, 0.90));
+            font-family: DM Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px;
+        }
+        .build-primary-text1{
+            color: #0096F6;
+            font-family: DM Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px;
+        }
     .build-left-content p {
-        width: 100%;
+        color: var(--colors-text, rgba(21, 20, 57, 0.90));
+        text-align: center;
+        font-family: DM Sans;
         font-size: 14px;
-        line-height: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
     }
 
     .build-left-btn-container {
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: center;
         align-items: center;
         gap: 2rem;
     }
+    
     .build-right-content img{
         border-radius: 10px;
         width: 400px;   
     }
+    .build-right-content1{
+        display: flex;
+    }
+
+    .build-right-content{
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 480px) {
+    
     .build-left-content h1 {
-        font-size: 28px;
-        line-height: 38px;
+        color: var(--colors-heading, #1E0E62);
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 125% */
+        letter-spacing: -0.4px;
     }
 
-    .build-left-content p {
-        font-size: 12px;
-        line-height: 22px;
+    .build-primary-text{
+        color: var(--colors-text, rgba(21, 20, 57, 0.40));
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 185.714% */
+    }
+
+    .build-primary-text1{
+        color: #0096F6;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    .build-primary-text2{
+        color: var(--colors-text, rgba(21, 20, 57, 0.40));
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px;
     }
     .build-left-btn-container {
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-left: 7em;
         text-align: center;
         margin-bottom: 20px;
         gap: 2rem;
     }
     .build-left-btn-container button {
+        color: var(--colors-white, #000);
+        text-align: center;
+        font-family: DM Sans;
         font-size: 14px;
-        padding: 10px 20px;
-        border-radius: 50px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; /* 185.714% */
     }
-
-    .build-right-content img{
-        border-radius: 10px;
-        width: 200px;   
+    .build-left-btn-container a{
+        color: #0096F6;
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; /* 185.714% */
     }
 }
