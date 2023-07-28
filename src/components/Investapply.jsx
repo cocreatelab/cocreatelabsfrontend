@@ -20,7 +20,7 @@ const Investapply = () => {
             opportunities to invest in.
           </p>
           <div className="get-intouch-btn mt-6 mb-8">
-            <a href="" className="text-blue-500 transform scale-100 scale-105">Get in touch with us</a>
+            <a href="./" className="text-blue-500 transform scale-100 scale-105">Get in touch with us</a>
           </div>
         </div>
         <div className="invest-apply-cards-container">
