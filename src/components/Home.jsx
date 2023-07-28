@@ -31,6 +31,9 @@ const Home = () => {
       <div className="home-container">
         <div className="home-left-container">
           <h1>Best Place in The World To Build Your Startup</h1>
+          <div className="home-right-content1">
+          <img src={Building1} alt="" onClick={openVideoModal} />
+        </div>
           <p>
             Co Create Labs is a game-changer in the startup ecosystem. It
             enables access to a global platform that brings together the best
