@@ -63,10 +63,6 @@ function FeedbackForm() {
         <br />
         <button type="submit" className='message' >Send a message</button>
       </div>
-{/*       <div className="contactform-help-container">
-        <h5>Help</h5>
-        <p>Need help? Don't hestiate to ask us somethnig. Email us directly info@designmodo.com or call us at 1-347-523-34-90. You can checkout our F.A.Q. and Help page to get more information about our products.</p>
-      </div> */}
       </Fade>
     </form>
   );
