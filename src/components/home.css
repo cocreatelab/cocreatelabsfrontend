@@ -56,6 +56,9 @@
   padding: 1em;
  }
 
+ .home-right-content1{
+  display: none;
+ }
  @media screen and (max-width: 1685px) {
   .home-container {
     padding: 8rem 0rem 0rem 0rem;
@@ -110,8 +113,13 @@
   }
 
   .home-right-content {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    display: none;
   }
+
+  .home-right-content1{
+    display: flex;
+   }
 }
 
 @media (max-width: 576px) {
