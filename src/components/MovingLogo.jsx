@@ -27,12 +27,12 @@ const containerRef = useRef(null);
   return (
       <div className="logo-parent-container">
       <div className="logo-container" ref={containerRef}>
-         <img className="mr-5" src={logo1} alt="logo1" />
-         <img className="mr-5" src={logo2} alt="logo2" />
-         <img className="mr-5" src={logo3} alt="logo3" />
-         <img className="mr-5" src={logo4} alt="logo4" />
-         <img className="mr-5" src={logo5} alt="logo5" />
-         <img className="mr-5" src={logo6} alt="logo6" />
+         <img className="mr-5" src={logo1} alt="logo1" class="img-fluid"/>
+         <img className="mr-5" src={logo2} alt="logo2" class="img-fluid"/>
+         <img className="mr-5" src={logo3} alt="logo3" class="img-fluid"/>
+         <img className="mr-5" src={logo4} alt="logo4" class="img-fluid"/>
+         <img className="mr-5" src={logo5} alt="logo5" class="img-fluid"/>
+         <img className="mr-5" src={logo6} alt="logo6" class="img-fluid"/>
       </div>
       </div>
   );
