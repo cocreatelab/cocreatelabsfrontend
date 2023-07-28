@@ -9,7 +9,7 @@ import single1 from "../assets/Single PF (1).png";
 const Offerings = () => {
   return (
     <Fade top distance="2%" delay={100} duration={1000}>
-      <div className="offerings-parent-container">
+      <div className="container offerings-parent-container">
         <p className="offerings-primary-heading">
           Our Offerings
         </p>
@@ -30,7 +30,7 @@ const Offerings = () => {
             capital can unlock long-term value and drive business growth.
           </p>
         </div>
-        <div className="offeringsbutton-container">
+        <div className="container offeringsbutton-container">
           <Link to="/mentor-connect">
             
             <button type="button" class="btn btn-primary rounded text-dark" className="mentorconnect">
@@ -50,7 +50,7 @@ const Offerings = () => {
             </button>
           </Link>
         </div>
-        <div className="offerings-rectangle-box mt-8">
+        <div className="container offerings-rectangle-box mt-8">
           <div className="offerings-box-content">
             <div className="offerings-left-content">
               <Link to="/">
