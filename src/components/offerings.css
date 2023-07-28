@@ -70,14 +70,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: none;
-  gap: 3rem;
-  padding: 2em;
+  gap: 4rem;
   margin-bottom: 43px;
 }
 .offeringsbutton-container button {
-  width: 190px;
-  height: 60px;
+  padding: 1em;
   border-radius: 10px;
 }
 
@@ -88,7 +85,7 @@
   font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
-font-size: 16px;
+font-size: 18px;
 line-height: 28px;
 text-transform: capitalize;
 color: #637381;
@@ -273,11 +270,18 @@ line-height: 24px;
     line-height: 25px;
   }
 
-  .offeringsbutton-container{
-    flex-direction: column;
-    /* width: 30%; */
-    width: 370px;
-    
+  .offeringsbutton-container button{
+    /* flex-direction: column; */
+    width: 120px;
+    font-size: 12px;
+    /* color: #FFF; */
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    text-transform: capitalize;
   }
   .offerings-rectangle-box {
     background: #f4f7ff;
