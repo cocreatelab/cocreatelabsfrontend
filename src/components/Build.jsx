@@ -6,24 +6,29 @@ import Fade from "react-reveal/Fade";
 const Build = () => {
   return (
     <>
+    
       <div className="build-parent-container">
-        <div className="build-left-content">
+      <div className="container build-content">    
+        <div className="container build-left-content">
         <Fade top distance='20' duration={1000} delay={100}>
-          <h1>Build Connections that help you grow your business</h1>
-          <div className="build-primary-text">
-            <p>Co - Create Labs is a one of a kind ecosystem of global leaders and
-            founders that <span className="text-blue-700">connect businesses, people, expertise and funds.</span> </p>
-            </div>
-            <p class="font-sans font-normal font-bold text-base leading-normal text-[rgba(23,20,57,1)] mix-blend-normal">All this is within your reach today.</p>
+          <h1 className="container">Build Connections that help you grow your business</h1>
+          <div className="container build-right-content1">
+          <img src={Knitting} alt="" />
+        </div>
+            <p className="container build-primary-text">Co - Create Labs is a one of a kind ecosystem of global leaders and
+            founders that <span className="build-primary-text1">connect businesses, people, expertise and funds.</span> </p>
+            
+            <p className="container build-primary-text2">All this is within your reach today.</p>
           <div className="build-left-btn-container">
             <button>Explore Connects</button>
-            <button>Learn More</button>
+            <a href="">Learn More</a>
           </div>
           </Fade>
         </div>
-        <div className="build-right-content">
+        <div className="container build-right-content">
           <img src={Knitting} alt="" />
         </div>
+      </div>
       </div>
     </>
   );
