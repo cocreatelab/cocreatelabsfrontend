@@ -36,7 +36,7 @@ const Investhero = () => {
                   scale up your start-up initiatives with investment caps
                   ranging from 10,000 USD- 1.2 M USD.
                 </p>
-{/*                 <p class="font-dm-sans font-normal text-base leading-relaxed  text-navy-900 mt-6">
+                {/* <p class="font-dm-sans font-normal text-base leading-relaxed  text-navy-900 mt-6">
                   XXX Investors | XXX VC
                 </p> */}
               </div>
@@ -63,7 +63,7 @@ const Investhero = () => {
 
           <div className="invest-right-content">
             <Fade right distance="20%" duration={1000} delay={100}>
-              <img src={investbanner} alt="" />
+              <img src={investbanner} alt="" class="img-fluid"/>
             </Fade>
           </div>
         </Fade>
