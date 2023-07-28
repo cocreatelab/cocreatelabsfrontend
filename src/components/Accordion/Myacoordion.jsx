@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import "./accordion.css";
 import Fade from "react-reveal/Fade";
@@ -16,7 +15,7 @@ const Myacoordion = ({ question, answer }) => {
               onClick={() => setShow(!show)}
               className="cursor-pointer space-2"
              >
-            
+
               <div className="plus-minus">{show ? "–" : "+"}</div>
             </p>  */}
           </Fade>
