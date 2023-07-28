@@ -3,11 +3,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* gap: 1rem; */
-    /* height: 800px; */
     padding: 8em;
     margin-left: 13%;
-    
 }
 .contactform-subparent-container{
     margin-left: -30%;
@@ -19,12 +16,7 @@
     font-weight: 700;
     font-size: 42px;
     line-height: 52px;
-    /* or 124% */
-    
     letter-spacing: -0.4px;
-    
-    /* Colors / Heading */
-    
     color: #1E0E62;
 }
 
@@ -35,14 +27,7 @@
     font-size: 22px;
     line-height: 32px;
     width: 700px;
-    /* or 145% */
-
-
-    /* Colors / Text */
-
     color: rgba(21, 20, 57, 0.4);
-
-
 }
 
 .contactform-call-container p{
@@ -91,7 +76,6 @@
 
 .email-id {
     mix-blend-mode: normal;
-    /* Colors / Grey */
     box-sizing: border-box;
     border: 2px solid #808080;
     border-radius: 100px;
@@ -101,12 +85,9 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
-    /* identical to box height, or 144% */
     width: 300px;
     display: flex;
     align-items: center;
-
-    /* Colors / Text */
     width: 350px;
     height: 50px;
     color: rgba(21, 20, 57, 0.4);
@@ -129,18 +110,11 @@
     text-align: left;
     font-size: 18px;
     line-height: 26px;
-    /* identical to box height, or 144% */
-
     display: flex;
     align-items: center;
-
-    /* Colors / Text */
-
     color: rgba(21, 20, 57, 0.4);
-
     border-radius: 100px;
     mix-blend-mode: normal;
-    /* Colors / Grey */
     box-sizing: border-box;
     border: 2px solid #808080;
     width: 250px;
@@ -153,17 +127,11 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
-    /* identical to box height, or 144% */
     box-sizing: border-box;
     display: flex;
     align-items: center;
     width: 194px;
-    /* Colors / Heading */
-
-    /* color: #1E0E62; */
     mix-blend-mode: normal;
-    /* Colors / Grey */
-
     border: 2px solid #808080;
     width: 170px;
     height: 50px;
@@ -177,18 +145,12 @@
     font-size: 18px;
     width: 194px;
     line-height: 26px;
-    /* identical to box height, or 144% */
-
     display: flex;
     align-items: center;
-
-    /* Colors / Heading */
-
     color: #1E0E62;
     box-sizing: border-box;
     border-radius: 100px;
     mix-blend-mode: normal;
-    /* Colors / Grey */
     width: 250px;
     height: 50px;
     border: 2px solid #808080;
@@ -200,13 +162,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
-    /* or 144% */
-
-
-    /* Colors / Text */
-
     color: rgba(21, 20, 57, 0.4);
-
     border-radius: 10px;
     width: 730px;
     height: 150px;
