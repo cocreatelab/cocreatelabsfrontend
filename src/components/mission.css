@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4em;
     background: #F4F7FF;
+    padding: 4em;
     overflow: hidden;
 }
 
@@ -12,81 +12,79 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 4%;
 }
 
 .mission-content{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* gap: 1em; */
+    justify-content: space-around;
+    gap: 4em;
 }
 .mission-left-content{
     display: flex;
     flex-direction: column;
-    justify-content: none;
     gap: 1rem;
-    padding: 3em;
     align-items: flex-start;
-    width: 62%;
-    /* margin-left: 60%; */
 }
+
 .mission-right-content img{
-    width: 1400px;
+    
 }
 
 .mission-left-content1 img{
-    width: 800px;
+    /* width: 800px; */
 }
 
 .mission-right-content1{
   display: flex;
   flex-direction: column;
-  justify-content: none;
-  /* gap: 1rem; */
-  /* padding: 3em; */
   align-items: flex-start;
   gap: 1rem;
-  width: 62%;
+  
 }
 
-.mission-content h6{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 28px;
-    color: #0096F6;
+.mission-left-content12{
+  display: none;
+}
+.mission-left-content h6,
+.mission-right-content1 h6{
+  color: #0096F6;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
 }
 
-.mission-content h3{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 38px;
-    line-height: 56px;
-    color: #282938;
+
+.mission-left-content h3,
+.mission-right-content1 h3{
+  color: var(--dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px; /* 147.368% */
 }
 
-.mission-content p{
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    color: #282938;
-    opacity: 0.7;
+.mission-left-content p,
+.mission-right-content1 p{
+  color: var(--dark-blue, #282938);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
 }
 
 /* For screens smaller than 768px (e.g. smartphones) */
 @media (max-width: 767px) {
     .mission-parent-container {
-      padding: 2em;
+        padding: 4em;
     }
     
     .mission-content-container {
-      padding: 1em;
+      gap: 10rem;
     }
     
     .mission-content {
@@ -94,129 +92,57 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      gap: 1.5em;
     }
     
     .mission-left-content {
-      margin: 0;
-      padding: 1.5em;
       align-items: center;
       text-align: center;
     }
     
-    .mission-right-content {
-      margin-top: 1em;
-    }
-    .mission-right-content img{
-        margin-top: -100px;
-        width: 100%;
-    
-    }
     .mission-left-content1 {
-      margin-left: 0;
-      padding: 3em;
-      align-items: center;
-      justify-content: center;
-      width: 20%;
-    }
-    
-    .mission-right-content1 {
-      padding: 1.5em;
-      gap: 1em;
+      display: none;
     }
 
-    .mission-left-content1 img{
-        /* margin-left: -80px; */
-        width: 180px;
-        margin-left: -90px;
-      }
-    
-    .mission-content h3 {
-      font-size: 28px;
-      line-height: 40px;
-      margin-bottom: 1em;
-    }
-    
-    .mission-content p {
-      font-size: 16px;
-      line-height: 24px;
-    }
-  }
-  
-  /* For screens between 768px and 1024px (e.g. tablets) */
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .mission-parent-container {
-      padding: 3em;
-    }
-    
-    .mission-content-container {
-      padding: 2em;
-    }
-    
-    .mission-content {
-      gap: 2.5em;
-    }
-    
-    .mission-left-content {
-      padding: 2em;
-    }
-    
-    .mission-left-content1 {
-      margin-left: 5%;
+    .mission-left-content12{
+      display: flex;
     }
     
     .mission-right-content1 {
-      padding: 2em;
-      gap: 1.5em;
+      align-items: center;
+    }
+
+    .mission-left-content h6,
+    .mission-right-content1 h6{
+      color: #0096F6;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px; /* 233.333% */
     }
     
-    .mission-content h3 {
+    
+    .mission-left-content h3,
+    .mission-right-content1 h3{
+      color: var(--dark-blue, #282938);
+      text-align: center;
+      font-family: Poppins;
       font-size: 32px;
-      line-height: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 40px; /* 125% */
     }
     
-    .mission-content p {
-      font-size: 17px;
-      line-height: 26px;
+    .mission-left-content p,
+    .mission-right-content1 p{
+      color: var(--dark-blue, #282938);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px; /* 185.714% */
     }
+    
   }
-  
-  /* For screens larger than 1024px (e.g. desktops) */
-  @media (min-width: 1024px) {
-    .mission-parent-container {
-      padding: 4em;
-    }
-    
-    .mission-content-container {
-      padding: 2em;
-    }
-    
-    .mission-content {
-      gap: 3em;
-    }
-    
-    .mission-left-content {
-      padding: 3em;
-      margin-left: 7%;
-    }
-    
-    .mission-left-content1 {
-      margin-left: 10%;
-    }
-    
-    .mission-right-content1 {
-      padding: 3em;
-      gap: 2em;
-    }
-    
-    .mission-content h3 {
-      font-size: 38px;
-      line-height: 56px;
-    }
-    
-    .mission-content p {
-      font-size: 18px;
-      line-height: 28px;
-    }
-  }
-  
