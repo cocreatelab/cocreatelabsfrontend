@@ -1,69 +1,204 @@
-
 .mentor-parent-container{
       display: flex;
       background-image: url("../assets/Group-21.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
-      /* margin-bottom: 1000px; */
+      padding: 18em;
+      overflow: hidden;
 }
 
-mentor-main-heading{
-  /* height: 10000%; */
+.mentor-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.mentor-content h1{
+  color: #30353E;
+  width: 80%;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 87px; /* 135.938% */
+  text-transform: capitalize;
 }
 
-.mentor-welcome-parent-container{
+.mentor-content p{
+  color: #737577;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 147.826% */
+}
+
+.mentor-welcome{
   display: flex;
   background-image: url("../assets/welcomebg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 2em;
+  padding: 5em;
+  margin-left: -50%;
 }
 
 
 
-.welcome-content-container{
-  /* display: flex; */
-  align-items: start;
-  justify-content: flex-start;
-  text-align: start;
-  width: 650px;
-  height: 722px;
-  margin-left: -60%;
+.welcome-content{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 3em;
+    background-color: white;
+    width: 20%;
 }
 
-.welcome-message{
-  /* margin-left: -53%; */
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  
-  color: #4A90E2;
-}
-.welcome-startup {
-  font-family: 'Inter';
+.welcome-content h1{
+  color: #212B36;
+  font-family: Inter;
+  font-size: 35px;
   font-style: normal;
   font-weight: 700;
-  font-size: 35px;
-  line-height: 46px;
+  line-height: 45.5px; /* 130% */
   text-transform: capitalize;
-  color: #212B36;
-  margin-top: 5%;
+  /* width: 30%; */
 }
 
-.welcome-primary-text{
-  width: 80%;
-  font-family: 'Inter';
+.welcome-content p{
+  font-family: Inter;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
+  line-height: 23px; /* 127.778% */
+  /* width: 50%; */
+}
+.welcome-msg{
+  color: #4A90E2;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.welcome-msg1{
   color: #637381;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px; /* 127.778% */
+}
+.welcome-btn-container{
+  display: flex;
+  gap: 2rem;
+}
+
+.welcome-btn-container a{
+  color: #212B36;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.welcome-apply{
+  border-radius: 15px;
+  background: #4A90E2;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 1.4em;
+}
+.go-to img{
+  width: 2900px;
 }
 
 .go-to-presence{
   margin-top: -4%;
+}
+
+@media (max-width: 1906px){
+  .mentor-welcome{
+    margin-left: 0%;
+}
+.welcome-content{
+  align-items:center;
+  width: 50%;
+}
+}
+
+
+@media (max-width: 768px){
+  .mentor-parent-container{
+    margin-top: 6%;
+  }
+  .mentor-content h1{
+    color: #30353E;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px; /* 125% */
+    text-transform: capitalize;
+  }
+  
+  .mentor-content p{
+    color: #94989C;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 111.111% */
+  }
+  .welcome-content{
+    align-items:center;
+    width: 100%;
+  }
+  .welcome-content h1{
+    color: #212B36;
+    text-align: center;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px; /* 125% */
+    text-transform: capitalize;
+  }
+  
+  .welcome-msg{
+    color: #4A90E2;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .welcome-msg1{
+    color: #637381;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+  }
+  .mentor-welcome{
+      margin-left: 0%;
+  }
 }
