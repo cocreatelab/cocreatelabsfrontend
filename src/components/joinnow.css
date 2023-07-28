@@ -20,7 +20,7 @@
 .joinnow-rectangular-card{
     display: flex;
     padding: 3% 7% 0% 7%;
-    margin-top: -16%;
+    margin-top: -13%;
     justify-content: center;
     align-items: flex-start;
     background: #F4F7FF;
@@ -126,19 +126,22 @@ margin-left: 110px;
 
 @media only screen and (max-width: 767px) {
     .joinnow-background {
-        padding: 3% 10%;
+        /* padding: 3% 10%; */
     }
 
     .joinnow-rectangular-card {
-        padding: 3% 3% 0% 3%;
+        /* padding: 3% 3% 0% 3%; */
     }
 
     .joinnow-rectangle-content {
-        gap: 2rem;
+        /* gap: 2rem; */
     }
 
     .joinnow-rectangle-content-left {
-        padding: 2% 3% 1% 3%;
+        /* padding: 2% 3% 1% 3%; */
+        margin-left: 10%;
+        align-items: center;
+        text-align: center;
     }
 
     .joinnow-primary-heading {
@@ -156,11 +159,11 @@ margin-left: 110px;
     }
 
     .joinnow-button-container button {
-        width: 150px;
-        height: 50px;
+        width: 120px;
+        height: 40px;
     }
 
-    .green-ellipse {
+    /* .green-ellipse {
         padding: 0% 28%;
     }
 
@@ -170,75 +173,44 @@ margin-left: 110px;
 
     .iphone-img {
         margin-top: -160px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 480px) {
-    .joinnow-parent-container{
-        overflow: hidden;
-    }
-    .joinnow-background {
-        padding: 3% 10%;
-    }
 
     .joinnow-rectangular-card {
-        padding: 3% 3% 0% 3%;
+        /* padding: 3% 3% 0% 3%; */
         overflow: hidden;
     }
 
     .joinnow-rectangle-content {
         flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
-        /* padding: 2%2%2%2%; */
-        gap: 2rem;
+        text-align: center;
     }
 
     .joinnow-rectangle-content-left {
         align-items: center;
         text-align: center;
-        padding: 2% 3% 1% 3%;
+        /* padding: 2% 3% 1% 3%; */
     }
 
     .joinnow-primary-heading {
-        font-size: 22px;
-        line-height: 28px;
+    
     }
 
     .joinnow-primary-text {
-        font-size: 12px;
-        line-height: 20px;
+
     }
 
     .joinnow-button-container {
-        gap: 2rem;
-        flex-direction: column;
+
     }
 
     .joinnow-button-container button {
-        width: 150px;
-        height: 55px;
+        
     }
 
-    .joinnow-rectangle-content-right{
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-    }
-
-    .green-ellipse {
-        margin-top: 30px;
-        padding: 0% 18%;
-    }
-
-    .blue-ellipse {
-        padding: 2% 80%;
-    }
-
-    .iphone-img {
-        margin-top: -140px;
-
-    }
 }
 
 
@@ -246,56 +218,70 @@ margin-left: 110px;
     .joinnow-parent-container {
       overflow: hidden;
     }
-  
-    .joinnow-background {
-      padding: 3% 10%;
-    }
-  
+  .joinnow-background{
+    display: none;
+  }
+
     .joinnow-rectangular-card {
-      padding: 3% 3% 0% 3%;
+      /* padding: 3% 3% 0% 3%; */
       overflow: hidden;
+      border-radius: 0%;
     }
   
     .joinnow-rectangle-content {
-      flex-direction: column;
+      /* flex-direction: column; */
       align-items: center;
-      flex-wrap: wrap;
+      text-align: center;
+      /* flex-wrap: wrap; */
       gap: 2rem;
+      margin-top: 5%;
     }
   
     .joinnow-rectangle-content-left {
       align-items: center;
       text-align: center;
-      padding: 2% 3% 1% 3%;
+      /* padding: 2% 3% 1% 3%; */
     }
   
     .joinnow-primary-heading {
-      font-size: 22px;
-      line-height: 28px;
+        color: #212B36;
+        text-align: center;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 35px; /* 145.833% */
+        text-transform: capitalize;
     }
   
     .joinnow-primary-text {
-      font-size: 12px;
-      line-height: 20px;
+        color: #676767;
+        text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; 
     }
   
     .joinnow-button-container {
       gap: 2rem;
-      flex-direction: column;
-    }
-  
-    .joinnow-button-container button {
-      width: 150px;
-      height: 55px;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      /* margin-left: -11%; */
     }
   
     .joinnow-rectangle-content-right {
-      display: none;
+      /* display: none; */
     }
   
     .green-ellipse {
-      margin-top: 30px;
-      padding: 0% 18%;
+      margin-top: -280px;
+      padding: 0% 30%;
+      margin-right: -44%;
+      overflow: hidden;
     }
   
     .blue-ellipse {
@@ -303,7 +289,8 @@ margin-left: 110px;
     }
   
     .iphone-img {
-      margin-top: -140px;
+      /* margin-top: -140px; */
+      display: none;
     }
   }
   
