@@ -1,9 +1,9 @@
 import React from "react";
-// import eventimg1 from "../assets/eventimg1.png";
 import "./upcomingevents.css";
 import imgh1 from "../assets/Group 12.png";
 import imgh2 from "../assets/Group 13.png";
 import imgh3 from "../assets/Group 14.png";
+import { Carousel } from "react-bootstrap";
 
 const Upcomingevents = () => {
   return (
@@ -22,51 +22,95 @@ const Upcomingevents = () => {
           </div>
         </div>
 
-        <div className="event-card-container flex flex-wrap flex-row">
-          <a
-            href="https://www.linkedin.com/feed/update/urn:li:activity:7076850441052958720/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="w-70 transform scale-100 hover:scale-105"
-              src={imgh1}
-              alt=""
-              // class="img-fluid"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/co-create-lab/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="w-70 transform scale-100 hover:scale-105"
-              src={imgh2}
-              alt=""
-              // class="img-fluid"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/co-create-lab/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="w-70 transform scale-100 hover:scale-105"
-              src={imgh3}
-              alt=""
-              // class="img-fluid"
-            />
-          </a>
-        </div>
+        <Carousel className="event-card-container"
+          nextIcon={<span className="carousel-arrow">&#8250;</span>}
+          prevIcon={<span className="carousel-arrow">&#8249;</span>}>
+          <Carousel.Item>
+            <div className="carousel-row flex">
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7076850441052958720/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="w-70 transform scale-100 hover:scale-105"
+                  src={imgh1}
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/co-create-lab/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="w-70 transform scale-100 hover:scale-105"
+                  src={imgh2}
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/co-create-lab/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="w-70 transform scale-100 hover:scale-105"
+                  src={imgh3}
+                  alt=""
+                />
+              </a>
+            </div>
+          </Carousel.Item>
+          {/* Add more Carousel.Items for additional slides */}
+
+          <Carousel.Item>
+            <div className="carousel-row flex">
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7076850441052958720/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="w-70 transform scale-100 hover:scale-105"
+                  src={imgh1}
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/co-create-lab/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="w-70 transform scale-100 hover:scale-105"
+                  src={imgh2}
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/co-create-lab/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="w-70 transform scale-100 hover:scale-105"
+                  src={imgh3}
+                  alt=""
+                />
+              </a>
+            </div>
+          </Carousel.Item>
+        </Carousel>
 
         <div className="events-button-container">
-        <a
+          <a
             href="https://twitter.com/cocreatelabs1"
             target="_blank"
             rel="noreferrer"
-          ><button className="loadmore">Learn More</button></a>
+          >
+            <button className="loadmore mb-20">Learn More</button>
+          </a>
         </div>
       </div>
     </div>
