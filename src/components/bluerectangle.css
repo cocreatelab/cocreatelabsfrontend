@@ -65,7 +65,7 @@
     margin-left: 40px;
     }
     .blue-right-content {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
     .blue-rectangle-contentchild{
         flex-direction: column;
@@ -97,4 +97,24 @@
     }
     }
     
-    
+    /* for screens smaller than 768px */
+@media (max-width: 525px) {
+    .blue-rectangle-content {
+   
+}
+    .blue-left-content h2{
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; 
+    }
+    .blue-right-content {
+        flex-direction: column;
+    }
+    .blue-rectangle-contentchild{
+        /* flex-direction: column; */
+    }
+    }
