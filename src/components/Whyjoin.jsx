@@ -14,48 +14,39 @@ const Whyjoin = () => {
   return (
     <div className="whyjoin-container">
       <Fade bottom distance="20%" duration={1000} delay={100}>
-        <div className="join-primary-heading">
+        <div className="container join-primary-heading">
           Why Join Co-Create Labs?
         </div>
         <div class="container">
           <div class="row justify-content-center mt-4 mt-md-10">
-            <div class="col-12 col-md-4">
+            <div class="col-4 col-md-4">
               <div class="flex flex-col items-center my-6 my-md-8">
-                {/* <img src={icon1} alt="" class="w-16 h-16" />
-                <h2 class="text-xl md:text-2xl mt-2">Connections</h2> */}
-                              <img src={card3} alt="" />
-
+                <img src={card3} alt="" />
               </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-4 col-md-4">
               <div class="flex flex-col items-center my-6 my-md-8">
-                {/* <img src={icon2} alt="" class="w-16 h-16" />
-                <h2 class="text-xl md:text-2xl mt-2">Growth</h2> */}
                 <img src={card4} alt="" />
               </div>
-              
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-4 col-md-4">
               <div class=" flex flex-col items-center my-6 my-md-8">
-                {/* <img src={icon3} alt="" class="w-16 h-16" />
-                <h2 class="text-xl md:text-2xl mt-2">Community</h2> */}
                 <img src={card5} alt="" />
               </div>
-              
             </div>
           </div>
         </div>
 
         <div className="whyjoin-parent-container mt-12 md:mt-8">
           <Fade bottom distance="20%" duration={1000} delay={100}>
-            <div className="join-parent-conatainer">
+            <div className="container join-parent-conatainer">
               <div className="row">
                 <div className="col-md-7">
-                  <div className="join-text-section text-start">
-                    <div className="join-primary-title">
+                  <div className="container join-text-section text-start">
+                    <div className="container join-primary-title">
                       <h4 className="">Connections</h4>
                     </div>
-                    <div className="join-primary-text">
+                    <div className="container join-primary-text">
                       <b>
                         Connect with
                         <span className="join-text-primary">
@@ -68,7 +59,7 @@ const Whyjoin = () => {
                         </span>{" "}
                       </b>
                     </div>
-                    <div className="join-primary-text1">
+                    <div className="container join-primary-text1">
                       Our global reach and network can help you discover and
                       forge meaningful connections for mentorship, fundraising,
                       growth, and propel you on a journey of personal and
@@ -88,10 +79,10 @@ const Whyjoin = () => {
               </div>
             </div>
 
-            <div className="join-parent-conatainer2">
+            <div className="container join-parent-conatainer2">
               <div className="row">
                 <div className="col-md-5">
-                  <div className="join-img-section">
+                  <div className="join-img-section3">
                     <img
                       src={Banner2}
                       alt=""
@@ -114,6 +105,14 @@ const Whyjoin = () => {
                         </span>{" "}
                       </b>
                     </div>
+                    <div className="join-img-section1">
+                      <img
+                        src={Banner2}
+                        alt=""
+                        className="responsive-img mb-10"
+                        class="img-fluid"
+                      />
+                    </div>
                     <div className="join-primary-text1">
                       Find opportunities to expand your skills and explore new
                       avenues of development with amazing outcomes. Seek and get
@@ -124,7 +123,7 @@ const Whyjoin = () => {
               </div>
             </div>
 
-            <div className="join-parent-conatainer">
+            <div className="container join-parent-conatainer">
               <div className="row">
                 <div className="col-md-7">
                   <div className="join-text-section text-start">
@@ -145,6 +144,14 @@ const Whyjoin = () => {
                         </span>{" "}
                       </b>
                     </div>
+                    <div className="join-img-section1">
+                      <img
+                        src={Banner3}
+                        alt=""
+                        className="responsive-img mb-10"
+                        class="img-fluid"
+                      />
+                    </div>
                     <div className="join-primary-text1">
                       Level up your startup with a world-class community that
                       supports you in pursuing your dream of building a
@@ -153,7 +160,7 @@ const Whyjoin = () => {
                   </div>
                 </div>
                 <div className="col">
-                  <div className="join-img-section">
+                  <div className="join-img-section3">
                     <img
                       src={Banner3}
                       alt=""
