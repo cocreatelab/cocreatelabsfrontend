@@ -12,6 +12,7 @@ import {Services} from "./pages/Services";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Fade from "react-reveal/Fade";
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import Flip from "react-reveal/Flip";
 const App = () => {
   return (
