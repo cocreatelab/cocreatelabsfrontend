@@ -1,0 +1,30 @@
+.changemaker-parent-container{
+    display: flex;
+    margin-bottom: 70px;
+    background: #F4F7FF;
+    padding: 5em;
+}
+.changemaker-parent-container img{
+    width: 2000px;
+    padding: 2em;
+}
+.changemaker-content-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.changemaker-top-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9rem;
+    margin-top: 20px;
+}
+
+.changemaker-left-container{
+    margin-top: -30px;
+}
+
+.changemaker-bellow-content{
+    width: 70%;
+}

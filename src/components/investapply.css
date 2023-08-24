@@ -1,0 +1,159 @@
+.invest-apply-parent-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 3% 10% 3% 15%;
+    gap: 2rem;
+    background: #F4F6FC;
+}
+
+.invest-apply-top-container{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+
+.investapply-primary-heading{
+    color: var(--dark-blue, #282938);
+    font-family: DM Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 133.333% */
+}
+
+.invest-apply-primary-text{
+    color: var(--dark-blue, #282938);
+    font-family: DM Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+
+.get-intouch-btn a{
+    color: var(--royal-blue, #2405F2);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 177.778% */
+}
+
+.invest-apply-cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.invest-apply-container{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.profile-heading{
+    color: var(--dark-blue, #282938);
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px; /* 133.333% */
+}
+
+.profile-text{
+    color: var(--dark-blue, #282938);
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 155.556% */
+}
+
+.invest-apply-center-left{
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .invest-apply-parent-container{
+        align-items: center;
+        text-align: center;
+    }
+
+    .invest-apply-top-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .investapply-primary-heading{
+        color: var(--dark-blue, #282938);
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 125% */
+    }
+
+    .invest-apply-primary-text{
+        color: var(--dark-blue, #282938);
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; /* 156.25% */
+    }
+
+    .get-intouch-btn a{
+        color: var(--royal-blue, #2405F2);
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px; /* 228.571% */
+    }
+    .invest-apply-container{
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+    }
+
+    .invest-apply-left img,
+    .invest-apply-right img{
+            margin-left: 28%;
+    }
+
+    .invest-apply-bottom-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .profile-heading{
+            color: var(--dark-blue, #282938);
+            text-align: center;
+            font-family: DM Sans;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 48px; /* 184.615% */
+        }
+    .profile-text{
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+
+}

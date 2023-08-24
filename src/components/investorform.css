@@ -1,0 +1,113 @@
+.two-step-form {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    background-color: white;
+    /* padding: 1em; */
+  }
+  
+  .form-image {
+    flex: 1;
+  }
+  
+  .form-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .form-content {
+    flex: 1;
+    padding: 20px;
+    
+  }
+  
+  .stepper {
+    display: flex;
+    align-items: center;
+    margin: 0.5em auto;
+  }
+  .form-parent-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    width: 100%;
+  }
+.left-form-field{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-field{
+    display: flex;
+    width: 280%;
+}
+
+  .step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .step.active {
+    background-color: green;
+  }
+  
+  .line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: gray;
+  }
+  
+  h2 {
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .investorformbtn {
+    margin-top: 10px;
+    border-radius: 100px;
+    width: 20%;
+    height: 50px;
+    border: 2px solid blue;
+  }
+
+  .two-step-form input[type="text"],
+.two-step-form input[type="email"],
+.two-step-form input[type="radio"],
+.two-step-form input[type="url"]  {
+  outline: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  color: gray;
+  border: 1px solid black;
+}
+
+.gender-inputs,
+.single-founder-inputs {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+  

@@ -1,0 +1,47 @@
+
+.logo-parent-container{
+  display: flex;
+  background: #F4F7FF;
+  overflow: hidden;
+}
+
+ .logo-container {
+  display: flex;
+  gap: 7rem; 
+  animation: rightToLeft 13s linear infinite; 
+  width: 3200px;
+  padding: 2em;
+  /* overflow: hidden; */
+}
+
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(1950px);
+  }
+  100% {
+    transform: translateX(-1900px);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .logo-container {
+    width: fit-content;
+    animation: rightToLeft 25s linear infinite; 
+  }
+}
+
+.logo {
+  max-width: 100px; 
+  height: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .logo-container {
+    justify-content: center;
+    align-items: center;
+    animation: rightToLeft 25s linear infinite; 
+    width: 100%;
+  }
+}
+

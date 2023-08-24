@@ -1,0 +1,197 @@
+.home-container{
+  display: flex;
+  background-image: url("../assets/background1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 8rem 0rem 6.5rem 0rem;
+ }
+.home-content{
+  display: flex;
+}
+ .home-left-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 50%;
+  padding: 0rem 8rem 0rem 9rem;
+ }
+
+ .home-left-container h1{
+  font-family: "Anek Gujarati";
+   font-style: normal;
+   font-weight: 400;
+   width: 90%;
+   font-size: 64px;
+   line-height: 75px;
+   letter-spacing: -0.581818px;
+   color: #111111;
+ }
+
+ .home-left-container p{
+  font-family: "DM Sans";
+     font-style: normal;
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 30px;
+     color: #747474;
+ }
+
+ .left-btn-conatainer{
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+ }
+ .left-btn-conatainer button:hover{
+        color: white;
+ }
+
+ .lfbtn{
+  background: #979797;
+  color: black;
+ }
+
+ .home-right-content{
+  display: flex;
+  padding: 1em;
+ }
+
+ .home-right-content1{
+  display: none;
+ }
+
+ .youtube-video{
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  outline: none;
+ }
+
+ .ivideo{
+        width: 70%;
+        height: 700px;
+ }
+ @media screen and (max-width: 1685px) {
+  .home-container {
+    padding: 8rem 0rem 0rem 0rem;
+  }
+
+  .home-left-container {
+    width: 100%;
+    padding: 4rem 2rem 2rem 3rem;
+  }
+
+  .home-left-container h1 {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.327273px;
+  }
+
+  .home-left-container p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .left-btn-container {
+    flex-direction: column;
+    margin-left: 10%;
+  }
+
+  .home-right-content {
+    display: flex;
+  }
+}
+
+
+
+@media (max-width: 820px) {
+  .home-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 14rem 1rem 3rem 1rem;
+    gap: 3rem;
+  }
+
+  .home-left-container {
+    width: 100%;
+    padding: 0 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-left-container h1 {
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .home-right-content {
+    /* margin-top: 2rem; */
+    display: none;
+  }
+
+  .home-right-content1{
+    display: flex;
+   }
+}
+
+@media (max-width: 576px) {
+  .home-left-container {
+    padding: 0 1rem;
+  }
+
+  .home-left-container h1 {
+    color: #111;
+text-align: center;
+font-family: Anek Gujarati;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 35px; /* 109.375% */
+letter-spacing: -0.582px;
+  }
+
+  .home-left-container p{
+    color: #747474;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .left-btn-conatainer{
+    display: flex;
+    gap: 7rem;
+    align-items: center;
+   }
+  .left-btn-conatainer button{
+    width: 130px;
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.145px;
+  }
+  .left-btn-conatainer button:hover{
+    color: white;
+  }
+
+  .youtube-video{
+    display: flex;
+    align-items: center;
+    margin-top: 50%;
+    outline: none;
+   }
+  
+   .ivideo{
+          width: 90%;
+          height: 250px;
+   }
+  
+}

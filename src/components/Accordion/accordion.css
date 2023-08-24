@@ -1,0 +1,220 @@
+.faq-parent-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    padding: 3%3%3%3%;
+    margin-top: 3px;
+}
+.main-heading{
+    flex-direction: row;
+    gap: 20rem;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    color: #170F49;
+}
+
+.main-heading p{
+    
+}
+
+.faq-container{
+    padding: 5em;
+    background: #F4F7FF;  
+}
+
+.faq-parent-heading h2{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 64px;
+text-align: center;
+color: #282938;
+margin-bottom: 4%;
+}
+
+.faq-button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4%;
+}
+
+.faq-button-container button{
+border: 1px solid #D9DBE9;
+box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.03);
+border-radius: 14px;
+background-color: white;
+color: black;
+outline: none;
+color: #6F6C90;
+padding: 1em;
+}
+.mentconnect:hover,
+.investconnect:hover,
+.grantconnect:hover{
+    background: #4A3AFF;
+    color: #FFFFFF;
+}
+.faq-bottom-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    text-align: start;
+    background-color: white;
+   padding: 3rem;
+   box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+   border-radius: 18px;
+   gap: 3rem;
+}
+
+.plus-minus{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    margin-right: -100px;
+}
+
+.cursor-pointer{
+    align-items: flex-end;
+    /* margin-left: -20px; */
+}
+
+.accordion-header{
+    /* display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: start; */
+    cursor: pointer;
+}
+.accordion-header h3{
+    color: var(--neutral-800, #170F49);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Headings/Typography Size 4 */
+    font-family: DM Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; 
+}
+
+.accordion-header.expanded h3{
+  color: #4A3AFF;
+}
+.accordion-content p{
+    color: var(--neutral-600, #6F6C90);
+    font-feature-settings: 'clig' off, 'liga' off;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    /* Paragraph/Default */
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+}
+
+@media (max-width: 1024px) {
+    .faq-parent-container {
+        padding: 0% 4% 0% 4%;
+    }
+
+    .main-heading {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .faq-container {
+        padding: 3em;
+    }
+
+    .faq-parent-heading h2 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .faq-button-container {
+        /* flex-direction: column; */
+        gap: 0.5rem;
+    }
+
+    .faq-bottom-container {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .faq-parent-container {
+        padding: 0% 2% 0% 2%;
+    }
+
+    .main-heading {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .faq-container {
+        padding: 2em;
+    }
+
+    .faq-parent-heading h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .faq-button-container {
+        /* flex-direction: column; */
+    }
+
+    .faq-bottom-container {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .faq-parent-container {
+        padding: 0% 1% 0% 1%;
+    }
+
+    .main-heading {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .faq-container {
+        padding: 1em;
+    }
+
+    .faq-parent-heading h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .faq-button-container {
+        /* flex-direction: column; */
+    }
+
+    .faq-bottom-container {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-button-container {
+      display: flex;
+      flex-wrap: wrap;
+      /* justify-content: space-between; */
+      gap: 2rem;
+    }
+    .faq-bottom-container {
+      margin-top: 20px;
+    }
+  }

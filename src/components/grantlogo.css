@@ -1,0 +1,107 @@
+.grantlogo-parent-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: #7DD4FF;
+        /* width: 1600px; */
+        height: 370px;
+        flex-shrink: 0;
+}
+
+.grantlogo-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.grantlogo-content p{
+    color: #FFF;
+    text-align: center;
+    
+    /* Text / Label */
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 185.714% */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.grantlogo-content h3{
+    color: #FFF;
+    text-align: center;
+    
+    /* Heading / H3 Title */
+    font-family: DM Sans;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px; /* 123.81% */
+    letter-spacing: -0.4px;
+    width: 866px;
+}
+.grantlogo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.grantlogo-container img{
+    width: 250px;
+}
+
+.grantlogo1{
+    display: flex;
+}
+.grantlogo2{
+    display: flex;
+}
+
+@media (max-width: 1370px) {
+    .grantlogo-container img{
+        width: 180px;
+    }
+}
+
+@media (max-width: 961px){
+    .grantlogo-container{
+        flex-direction: column;
+    }
+
+    .grantlogo-content p{
+        color: #FFF;
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 26px; /* 216.667% */
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .grantlogo-content h3{
+        color: #FFF;
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 133.333% */
+        letter-spacing: -0.4px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 582px){
+    .grantlogo-container img{
+        width: 120px;
+    }
+}
+

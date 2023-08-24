@@ -1,0 +1,101 @@
+.pitch-parent-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding: 2em; */
+    gap: 1rem;
+    /* margin-top: 4%; */
+    background-image: url("../assets/pitchbackground.png");
+}
+
+.pitch-content-container{
+    padding: 2em;
+}
+
+.pitch-content-container h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px; /* 93.75% */
+    text-transform: capitalize;
+}
+
+.pitch-content-container h2{
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+}
+
+.pitch-content-container p{
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 125% */
+}
+
+
+.pitchbtn{
+    background: #4A90E2;
+    border-radius: 20px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    width: 200px;
+    padding: 1em;
+}
+
+@media (max-width: 768px) {
+            .pitch-content-container h1{
+                color: #FFF;
+                text-align: center;
+                font-family: Poppins;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 40px; /* 125% */
+                text-transform: capitalize;
+            }
+
+            .pitch-content-container h2{
+                color: #FFF;
+                font-family: DM Sans;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 40px;
+            }
+
+            .pitch-content-container p{
+                color: #FFF;
+                text-align: center;
+                font-family: DM Sans;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25px; /* 156.25% */
+            }
+}
+
+@media (max-width: 480px) {
+
+}

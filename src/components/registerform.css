@@ -1,0 +1,66 @@
+
+
+.grantform {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  padding: 3rem 7rem 3rem 7rem;
+  background: #f4f7ff;
+  border-radius: 100px;
+}
+
+.form-heading {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.4px;
+  color: #1e0e62;
+}
+
+.register-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+	gap: 15px;
+}
+
+.register-form-container input {
+	color: black;
+  padding: 4%;
+  width: 150%;
+  border: 1px solid grey;
+  border-radius: 100px;
+}
+
+#check {
+  width: 10px;
+}
+
+.grantform button {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  /* Colors / White */
+  background: #482be7;
+  color: #ffffff;
+  border-radius: 100px;
+  padding: 10px;
+  width: 120%;
+}

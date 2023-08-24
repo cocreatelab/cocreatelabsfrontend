@@ -1,0 +1,25 @@
+.testimonial-carousel {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .carousel-controls button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carousel-controls button:hover {
+    background-color: #555;
+  }
+  

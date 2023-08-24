@@ -1,0 +1,120 @@
+.blue-rectangle-parent-container{
+    background: #3056D3;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    /* margin-top: -5%; */
+}
+
+.blue-rectangle-content{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    gap: 3rem;
+    padding: 4em;
+}
+.blue-rectangle-contentchild{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blue-left-content{
+    padding: 0%17%0%0%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+.blue-right-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.blue-rectangle-left-icon img{
+    margin-left: -270px;   
+    margin-top: 15px;
+}
+
+.blue-rectangle-right-icon img{
+    margin-right: -240px;
+    margin-top: 150px;
+}
+
+/* for screens smaller than 768px */
+@media (max-width: 767px) {
+    .blue-rectangle-content {
+    padding: 2em;
+    /* flex-direction: column; */
+        /* gap: 3rem; */
+        overflow: hidden;
+}
+    .blue-left-content {
+    font-size: 25px;
+    line-height: 36px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 40px;
+    }
+    .blue-right-content {
+        /* flex-direction: column; */
+    }
+    .blue-rectangle-contentchild{
+        flex-direction: column;
+    }
+    .blue-rectangle-left-icon img {
+    margin-left: -120px;
+    }
+    .blue-rectangle-right-icon img {
+    margin-right: -120px;
+    margin-top: 80px;
+    }
+    }
+    
+    /* for screens between 768px and 1024px */
+    @media (min-width: 768px) and (max-width: 1024px) {
+    .blue-rectangle-content {
+    padding: 3em;
+    }
+    .blue-left-content {
+    font-size: 30px;
+    line-height: 42px;
+    }
+    .blue-rectangle-left-icon img {
+    margin-left: -180px;
+    }
+    .blue-rectangle-right-icon img {
+    margin-right: -180px;
+    margin-top: 120px;
+    }
+    }
+    
+    /* for screens smaller than 768px */
+@media (max-width: 525px) {
+    .blue-rectangle-content {
+   
+}
+    .blue-left-content h2{
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; 
+    }
+    .blue-right-content {
+        flex-direction: column;
+    }
+    .blue-rectangle-contentchild{
+        /* flex-direction: column; */
+    }
+    }
