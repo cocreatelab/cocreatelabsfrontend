@@ -23,6 +23,10 @@
   /* cursor: pointer; */
  }
 
+ .nav-links a:hover{
+  text-decoration: underline;
+ }
+
  .modal-dialog-custom{
   width: 1200px;
  }
